@@ -21,10 +21,10 @@
             
  
  
-$sql="INSERT INTO user (username, password, email)
+$sql="INSERT INTO login (username, password,email)
 VALUES
-('$_POST[username]','$_POST[password]' ','$_POST[email]' )";
- 
+('$_POST[username]','$_POST[password]'','$_POST[email])";
+
             echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 
                 echo "Query executed<br>";

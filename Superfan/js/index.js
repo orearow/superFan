@@ -52,4 +52,4 @@ var init = function() {
   $('a[href^="#"]').on('click',scrolly);
 };
 
-doc.on('ready', init);
+doc.on('ready', init)
