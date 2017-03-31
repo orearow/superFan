@@ -39,22 +39,25 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
+      <!--
       <div class="panel__block"></div>
+      <body onload = "startTimer()">
+       <img id="urmom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png" border="0"/>
+      </body>
+      -->
   <div class="login-wrap">
   <div class="login-html">
     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
-                  <form action="login.php" method="post">
-
         <div class="group">
           <label for="user" class="label">Username</label>
-          <input id="username" type="text" name= "username" class="input">
+          <input id="user" type="text" class="input">
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
-          <input id="password" name= "password" type="password" class="input" data-type="password">
+          <input id="pass" type="password" class="input" data-type="password">
         </div>
         <div class="group">
           <input id="check" type="checkbox" class="check" checked>
@@ -63,33 +66,31 @@
         <div class="group">
           <input type="submit" class="button" value="Sign In">
         </div>
-        </form>
-
         <div class="hr"></div>
         <div class="foot-lnk">
           <a href="#forgot">Forgot Password?</a>
         </div>
       </div>
       <div class="sign-up-htm">
-                    <form action="newUser.php" method="post">
-
         <div class="group">
-          <label for="username" class="label">Username</label>
-          <input id="username" name="username" type="text" class="input">
+          <label for="user" class="label">Username</label>
+          <input id="user" type="text" class="input">
         </div>
         <div class="group">
-          <label for="password" class="label">Password</label>
-          <input id="password" name="password" type="password" class="input" data-type="password">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
         </div>
         <div class="group">
-          <label for="password" class="label">Email Address</label>
-          <input id="pass" name="email" type="text" class="input">
+          <label for="pass" class="label">Repeat Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Email Address</label>
+          <input id="pass" type="text" class="input">
         </div>
         <div class="group">
           <input type="submit" class="button" value="Sign Up">
         </div>
-                                                  </form>
-
         <div class="hr"></div>
         <div class="foot-lnk">
           <label for="tab-1">Already Member?</a>
@@ -193,13 +194,13 @@
         </div>
 
         <div id="cf3">
-         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom1_zpswslmrqop.png" width="200" height="200" />
-         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom2_zpssjonxnjq.png" width="200" height="200" />
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama1_zpsxaxgq1tt.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama2_zpsnjpeyf6u.png" width="200" height="200" />
         </div>
 
         <div id="cf4">
-         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI1_zpsdswzyoam.png" width="200" height="200" />
-         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI2_zpsbunpvrhy.png" width="200" height="200" />
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery2_zps0wgtmosb.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery1_zpsulhfbr5e.png" width="200" height="200" />
         </div>
 
         <div id="cf5">
@@ -212,6 +213,20 @@
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom2_zpssjonxnjq.png" width="200" height="200" />
         </div>
 
+        <div id="cf7">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/comedy1_zps9dkl83is.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsptnperfw.png" width="200" height="200" />
+        </div>
+
+        <div id="cf8">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror1_zpsnvjpkhix.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror2_zpssubvcmn5.png" width="200" height="200" />
+        </div>
+
+        <div id="cf9">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child2_zpsganyrw8r.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child1_zpsbe9y2to5.png" width="200" height="200" />
+        </div>
 
     </div>
   </article>
@@ -234,10 +249,32 @@
     <script src="js/index.js"></script>
 
 <script>
+
 function loadPage(){
   alert("HI!");
 }
+
 </script>
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 4000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png";
+          images[1] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner2_zpsyomqpdzk.png";
+      </script>
 
 </body>
 </html>
