@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>SUPERFAN</title>
@@ -22,16 +22,16 @@
 
   <ul class="nav__list">
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
+      <a href="#4" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
+      <a href="#2" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
+      <a href="#3" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
     </li>
-    <li onclick="loadPage();" class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
+    <li class="nav__item">
+      <a href="#1" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
     </li>
   </ul>
 </nav>
@@ -240,7 +240,22 @@
     </div>
   </article>
 </section>
-<a href="http://ettrics.com/code/vertical-layout-navigation/" class="logo" target="_blank">
+
+
+<section class="panel b-pink" id="5" style="visibility:hidden">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
+      <div class="panel__block"></div>
+        <p>HEY LMAO</p>
+
+    </div>
+  </article>
+</section>
+
+
+
+<a href="#5" class="logo" target="_blank" onclick="newPage('5');">
  <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/add_zpsketqweds.png" alt="" /> 
 </a>
 
@@ -252,6 +267,10 @@
 
 function loadPage(){
   alert("HI!");
+}
+
+function newPage(i){
+  document.getElementById(i).style.visibility="visible";
 }
 
 </script>
