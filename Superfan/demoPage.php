@@ -39,12 +39,6 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
-      <!--
-      <div class="panel__block"></div>
-      <body onload = "startTimer()">
-       <img id="urmom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png" border="0"/>
-      </body>
-      -->
   <div class="login-wrap">
   <div class="login-html">
     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
@@ -241,18 +235,59 @@
   </article>
 </section>
 
-
-<section class="panel b-pink" id="5" style="visibility:hidden">
+<section class="panel b-pink" id="5" style="display:none">
   <article class="panel__wrapper">
     <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
       <div class="panel__block"></div>
-        <p>HEY LMAO</p>
-
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="tvname" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" type="text" class="input">
+        </div>
+        <form>
+        <a href="#tvpage" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+</form>
     </div>
   </article>
 </section>
 
+<section class="panel b-black" id="6" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
+      <div class="panel__block"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
 
 
 <a href="#5" class="logo" target="_blank" onclick="newPage('5');">
@@ -265,12 +300,20 @@
 
 <script>
 
-function loadPage(){
-  alert("HI!");
+function newPage(i){
+  document.getElementById(i).style.display="flex";
 }
 
-function newPage(i){
-  document.getElementById(i).style.visibility="visible";
+function grabTV(i) {
+    var tvname = document.getElementById("tvname").value;
+    var tvyear = document.getElementById("tvyear").value;  
+    var tvcreatedby = document.getElementById("tvcreatedby").value;
+    var tvepisodes = document.getElementById("tvepisodes").value; 
+    var tvdirector = document.getElementById("tvdirector").value;
+    var tvwriter = document.getElementById("tvwriter").value;  
+    var tvss = document.getElementById("tvss").value;
+    var tvne = document.getElementById("tvne").value;
+    document.getElementById(i).style.display="none";
 }
 
 </script>
