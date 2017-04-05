@@ -197,6 +197,15 @@ ul {
   font-size: 48px;
   margin: 0 0 25px 0;
 }
+
+.panel__headline__media {
+  color:#f3f3f3;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 48px;
+  margin: 0 0 25px 0;
+}
+
 .panel p {
   margin: 0 0 25px 0;
   color: #1a1a1a;
@@ -211,6 +220,13 @@ ul {
   background: rgba(0, 0, 0, 0.2);
   margin: 0 0 25px 0;
 }
+
+.panel__block__media {
+  height: 3px;
+  background: #f3f3f3;
+  margin: 0 0 23px 0;
+}
+
 @media (max-width: 640px) {
   .panel__headline {
     font-size: 36px;
