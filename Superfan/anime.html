@@ -3,69 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>ANIME</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section class="panel b-blue" id="4">
+<section class="panel b-red" id="1">
   <article class="panel__wrapper">
     <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
-  <div class="login-wrap">
-  <div class="login-html">
-    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-    <div class="login-form">
-      <div class="sign-in-htm">
-        <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
-        </div>
-        <div class="group">
-          <input id="check" type="checkbox" class="check" checked>
-          <label for="check"><span class="icon"></span> Keep Me Signed In</label>
-        </div>
-        <div class="group">
-          <input type="submit" class="button" value="Sign In">
-        </div>
-        <div class="hr"></div>
-        <div class="foot-lnk">
-          <a href="#forgot">Forgot Password?</a>
-        </div>
-      </div>
-      <div class="sign-up-htm">
-        <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Repeat Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Email Address</label>
-          <input id="pass" type="text" class="input">
-        </div>
-        <div class="group">
-          <input type="submit" class="button" value="Sign Up">
-        </div>
-        <div class="hr"></div>
-        <div class="foot-lnk">
-          <label for="tab-1">Already Member?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;ANIME</h1>
+    	<div class="panel__block"></div>
+    	<a href="" class="anime1" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/inuyasha_zpskmoxbduf.png" border="0" alt=" photo inuyasha_zpskmoxbduf.png"/></a>
+     	<a href="" class="anime1" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/noimage_zpsei50o2qm.png" border="0"/></a>  
+     	<a href="" class="anime1" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/noimage_zpsei50o2qm.png" border="0"/></a>   	
+     	<a href="" class="anime1" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/addimage_zpsumki2sou.png" border="0"/></a>    	
     </div>
   </article>
 </section>
+
+<section class="panel b-black" id="14" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;CHILDREN</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<a href="index.html" class="back">
+    <div>
+    <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/back_zpsxiycfzd6.png" alt="" /> 
+    </div>
+</a>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+<script>
+
+function newPage(i){
+  document.getElementById(i).style.display="flex";
+}
+
+function grabTV(i) {
+    var tvname = document.getElementById("tvname").value;
+    var tvyear = document.getElementById("tvyear").value;  
+    var tvcreatedby = document.getElementById("tvcreatedby").value;
+    var tvepisodes = document.getElementById("tvepisodes").value; 
+    var tvdirector = document.getElementById("tvdirector").value;
+    var tvwriter = document.getElementById("tvwriter").value;  
+    var tvss = document.getElementById("tvss").value;
+    var tvne = document.getElementById("tvne").value;
+    document.getElementById(i).style.display="none";
+}
+
+</script>
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 4000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png";
+          images[1] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner2_zpsyomqpdzk.png";
+      </script>
+
 </body>
 </html>
