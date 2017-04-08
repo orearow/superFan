@@ -183,36 +183,60 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
       <div class="panel__block"></div>
+        <a href="#6" onclick="newPage('6');">
         <div id="cf">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/anime1_zpswnugygzx.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/anime2_zpsogwd5wb6.png" width="200" height="200" />
         </div>
+        </a>
+        <a href="#7" onclick="newPage('7');">
         <div id="cf2">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI1_zpsdswzyoam.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI2_zpsbunpvrhy.png" width="200" height="200" />
         </div>
-
+        </a>
+        <a href="#8" onclick="newPage('8');">
         <div id="cf3">
-         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom1_zpswslmrqop.png" width="200" height="200" />
-         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom2_zpssjonxnjq.png" width="200" height="200" />
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama1_zpsxaxgq1tt.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama2_zpsnjpeyf6u.png" width="200" height="200" />
         </div>
-
+        </a>
+        <a href="#9" onclick="newPage('9');">
         <div id="cf4">
-         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI1_zpsdswzyoam.png" width="200" height="200" />
-         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI2_zpsbunpvrhy.png" width="200" height="200" />
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery2_zps0wgtmosb.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery1_zpsulhfbr5e.png" width="200" height="200" />
         </div>
-
+        </a>
+        <a href="#10" onclick="newPage('10');">
         <div id="cf5">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/fantasy2_zpsbhqyvo8i.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/fantasy1_zpsqjpxyaul.png" width="200" height="200" />
         </div>
-
+        </a>
+        <a href="#11" onclick="newPage('11');">
         <div id="cf6">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom1_zpswslmrqop.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom2_zpssjonxnjq.png" width="200" height="200" />
         </div>
-
-
+        </a>
+        <a href="#12" onclick="newPage('12');">
+        <div id="cf7">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/comedy1_zps9dkl83is.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsptnperfw.png" width="200" height="200" />
+        </div>
+        </a>
+        <a href="#13" onclick="newPage('13');">
+        <div id="cf8">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror1_zpsnvjpkhix.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror2_zpssubvcmn5.png" width="200" height="200" />
+        </div>
+        </a>
+        <a href="#14" onclick="newPage('14');">
+        <div id="cf9">
+         <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child2_zpsganyrw8r.png" width="200" height="200" />
+         <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child1_zpsbe9y2to5.png" width="200" height="200" />
+        </div>
+        </a>
     </div>
   </article>
 </section>
@@ -225,8 +249,146 @@
     </div>
   </article>
 </section>
-    <a href="tabber/tabActivity.html" class="logo" target="_blank">
 
+<section class="panel b-pink" id="5" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
+      <div class="panel__block"></div>
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="tvname" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" type="text" class="input">
+        </div>
+        <form>
+        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+</form>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="6" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;ANIME</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="7" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;SCI-FI</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="8" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;DRAMA</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="9" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;MYSTERY</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="10" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;FANTASY</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="11" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;ROMANCE</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="12" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;COMEDY</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="13" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;HORROR</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+<section class="panel b-black" id="14" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;CHILDREN</h1>
+      <div class="panel__block__media"></div>
+      <p>Hey boi</p>
+    </div>
+  </article>
+</section>
+
+
+
+
+
+<a href="#5" class="logo" target="_blank" onclick="newPage('5');">
  <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/add_zpsketqweds.png" alt="" /> 
 </a>
 
@@ -235,10 +397,45 @@
     <script src="js/index.js"></script>
 
 <script>
-function loadPage(){
-  alert("HI!");
+
+function newPage(i){
+  document.getElementById(i).style.display="flex";
 }
+
+function grabTV(i) {
+    var tvname = document.getElementById("tvname").value;
+    var tvyear = document.getElementById("tvyear").value;  
+    var tvcreatedby = document.getElementById("tvcreatedby").value;
+    var tvepisodes = document.getElementById("tvepisodes").value; 
+    var tvdirector = document.getElementById("tvdirector").value;
+    var tvwriter = document.getElementById("tvwriter").value;  
+    var tvss = document.getElementById("tvss").value;
+    var tvne = document.getElementById("tvne").value;
+    document.getElementById(i).style.display="none";
+}
+
 </script>
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("urmom").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 4000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png";
+          images[1] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner2_zpsyomqpdzk.png";
+      </script>
+
 
 </body>
 </html>
