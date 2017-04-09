@@ -21,9 +21,9 @@
             
  
  
-$sql="INSERT INTO login (username, password, email)
+$sql="INSERT INTO series (name, created, episodenum, synstat, network, director, writer, year)
 VALUES
-('$_POST[username]','$_POST[password]','$_POST[email]')";
+('$_POST[name]','$_POST[created]','$_POST[tvepisodes] ','$_POST[tvss]','$_POST[tvne]','$_POST[tvdirector]','$_POST[tvwriter]','$_POST[tvyear]')";
 
             echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 

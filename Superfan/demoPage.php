@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
   <meta charset="UTF-8">
   <title>SUPERFAN</title>
@@ -22,16 +22,16 @@
 
   <ul class="nav__list">
     <li class="nav__item">
-      <a href="#4" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
+      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="#2" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
+      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="#3" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
+      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
     </li>
-    <li class="nav__item">
-      <a href="#1" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
+    <li onclick="loadPage();" class="nav__item">
+      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
     </li>
   </ul>
 </nav>
@@ -39,19 +39,22 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
+      <div class="panel__block"></div>
   <div class="login-wrap">
   <div class="login-html">
     <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
+                  <form action="login.php" method="post">
+
         <div class="group">
           <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
+          <input id="username" type="text" name= "username" class="input">
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
+          <input id="password" name= "password" type="password" class="input" data-type="password">
         </div>
         <div class="group">
           <input id="check" type="checkbox" class="check" checked>
@@ -60,31 +63,33 @@
         <div class="group">
           <input type="submit" class="button" value="Sign In">
         </div>
+        </form>
+
         <div class="hr"></div>
         <div class="foot-lnk">
           <a href="#forgot">Forgot Password?</a>
         </div>
       </div>
       <div class="sign-up-htm">
+                    <form action="newUser.php" method="post">
+
         <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
+          <label for="username" class="label">Username</label>
+          <input id="username" name="username" type="text" class="input">
         </div>
         <div class="group">
-          <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
+          <label for="password" class="label">Password</label>
+          <input id="password" name="password" type="password" class="input" data-type="password">
         </div>
         <div class="group">
-          <label for="pass" class="label">Repeat Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Email Address</label>
-          <input id="pass" type="text" class="input">
+          <label for="password" class="label">Email Address</label>
+          <input id="pass" name="email" type="text" class="input">
         </div>
         <div class="group">
           <input type="submit" class="button" value="Sign Up">
         </div>
+                                                  </form>
+
         <div class="hr"></div>
         <div class="foot-lnk">
           <label for="tab-1">Already Member?</a>
@@ -250,41 +255,53 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
       <div class="panel__block"></div>
+              <form action="tv.php" method="post">
+
         <div class="group">
+            
+            
+            
+            
           <label for="user" class="label">Name</label>
-          <input id="tvname" type="text" class="input">
+          <input id="name" name="name" type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Year</label>
-          <input id="tvyear" type="text" class="input">
+          <input id="tvyear" name="tvyear" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Created By</label>
-          <input id="tvcreatedby" type="text" class="input">
+          <input id="tvcreatedby" name="created" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Number of Episodes</label>
-          <input id="tvepisodes" type="text" class="input">
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Director</label>
-          <input id="tvdirector" type="text" class="input">
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Writer</label>
-          <input id="tvwriter" type="text" class="input">
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Syndication Status</label>
-          <input id="tvss" type="text" class="input">
+          <input id="tvss" name="tvss" type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
-          <input id="tvne" type="text" class="input">
+          <input id="tvne" name="tvne" type="text" class="input">
+          
+          
+                                            <input type="submit" class="button" value=" add">
+
         </div>
-        <form>
-        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+     
+                  
+
 </form>
+
     </div>
   </article>
 </section>
@@ -430,6 +447,7 @@ function grabTV(i) {
           images[0] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner1_zpsbax2fucm.png";
           images[1] = "http://i1244.photobucket.com/albums/gg568/teehuynhsama/banner2_zpsyomqpdzk.png";
       </script>
+
 
 </body>
 </html>
