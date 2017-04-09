@@ -280,7 +280,7 @@ ul {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   bottom: 3vh;
   right: 3vw;
   z-index: 2;
@@ -295,6 +295,13 @@ ul {
 .logo img:hover {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
+}
+
+#tinaislit {
+  bottom: 50px;
+  right: 1vw;
+  position: absolute;
+  z-index: 1;
 }
 
 body{
