@@ -298,8 +298,8 @@ ul {
 }
 
 #tinaislit {
-  bottom: 50px;
-  right: 1vw;
+  bottom: 100px;
+  right: 3vw;
   position: absolute;
   z-index: 1;
 }
