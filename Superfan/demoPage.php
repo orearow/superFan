@@ -50,6 +50,7 @@
       
 <button onclick="location.href = 'member/memberPage.html';" id="myButton" class="float-left submit-button" >Profile</button>
 
+
       <div class="panel__block"></div>
   <div class="login-wrap">
   <div class="login-html">
@@ -393,7 +394,66 @@
     </div>
   </article>
 </section>
+
 <!-- end for the industry professional -->
+
+
+
+<section class="panel b-pink" id="5" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
+      <div class="panel__block"></div>
+              <form action="tv.php" method="post">
+
+        <div class="group">
+            
+            
+            
+            
+          <label for="user" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" name="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" name="created" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" name="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" name="tvne" type="text" class="input">
+          
+          
+                                            <input type="submit" class="button" value=" add">
+
+        </div>
+     
+                  
+
+</form>
+
+    </div>
+  </article>
+</section>
 
 
 <section class="panel b-black" id="6" style="display:none">
@@ -520,6 +580,7 @@ function grabTV(i) {
     var tvss = document.getElementById("tvss").value;
     var tvne = document.getElementById("tvne").value;
     document.getElementById(i).style.display="none";
+
 }
 
 </script>
@@ -542,6 +603,7 @@ function grabIndustry(i) {
     var indusEmployer = document.getElementById("indusEmployer").value; 
 
     document.getElementById(i).style.display="none";
+
 }
 
 </script>
