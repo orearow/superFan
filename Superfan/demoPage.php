@@ -15,6 +15,13 @@
 <a href="http://s1244.photobucket.com/user/teehuynhsama/media/superda_zpsyq9iqyrb.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/superda_zpsyq9iqyrb.png" border="0" alt=" photo superda_zpsyq9iqyrb.png"/></a>
 </header>
 -->
+    
+    <!--
+    <a href="#5" class="logo" target="_blank" onclick="member/memberPage.html;">
+ <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/ettrics-logo.svg" alt="" /> 
+</a>
+-->
+
 <body>
   <nav class="nav">
   <div class="burger">
@@ -40,6 +47,9 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
+      
+<button onclick="location.href = 'member/memberPage.html';" id="myButton" class="float-left submit-button" >Profile</button>
+
       <div class="panel__block"></div>
   <div class="login-wrap">
   <div class="login-html">
@@ -199,6 +209,19 @@
       <form action="getShowByName.php" method="post">
             <b>Input Name of TV SERIES:</b><br />
             <input type ="text" name = "series_name" size=40><br />
+            
+            <div class="field" id="searchform">
+
+</div>
+
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+            
+            
+            
+            
+            
+            
+            
                     </form>
       
       
