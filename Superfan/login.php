@@ -20,14 +20,12 @@
             
             
  
- $username = $_POST['username'];
- $password = $_POST['password'];
-
-$sql = "SELECT username, password"
-        . "FROM login WHERE username = '$username' AND password='$password'";
  
+$sql="INSERT INTO login (username, password)
+VALUES
+('$_POST[username]','$_POST[password]')";
  
-            echo "<br><br> checking db: ";
+            echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 
                 echo "Query executed<br>";
             }

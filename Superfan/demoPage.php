@@ -15,13 +15,6 @@
 <a href="http://s1244.photobucket.com/user/teehuynhsama/media/superda_zpsyq9iqyrb.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/superda_zpsyq9iqyrb.png" border="0" alt=" photo superda_zpsyq9iqyrb.png"/></a>
 </header>
 -->
-    
-    <!--
-    <a href="#5" class="logo" target="_blank" onclick="member/memberPage.html;">
- <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/ettrics-logo.svg" alt="" /> 
-</a>
--->
-
 <body>
   <nav class="nav">
   <div class="burger">
@@ -47,10 +40,6 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
-      
-<button onclick="location.href = 'member/memberPage.html';" id="myButton" class="float-left submit-button" >Profile</button>
-
-
       <div class="panel__block"></div>
   <div class="login-wrap">
   <div class="login-html">
@@ -121,15 +110,12 @@
             <form action="getShowByName.php" method="post">
             <b>Input Name of MOVIE:</b><br />
             <input type ="text" name = "series_name" size=40><br />
-                    </form>
- 
+            </form>
       <form action="tabber/tabActivity.html" method="get">
-
   <button type="submit">Other Search Options</button><br>
 </form>
-           <br>
       <br>
-      
+      <br>
       <div class="panel__block"></div>
       <div id="f1_container">
       <div id="f1_card" class="shadow">
@@ -210,19 +196,6 @@
       <form action="getShowByName.php" method="post">
             <b>Input Name of TV SERIES:</b><br />
             <input type ="text" name = "series_name" size=40><br />
-            
-            <div class="field" id="searchform">
-
-</div>
-
-<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-            
-            
-            
-            
-            
-            
-            
                     </form>
       
       
@@ -297,12 +270,11 @@
       <h1 class="panel__headline"><i class="fa fa-camera-retro"></i>&nbsp;ABOUT</h1>
       <div class="panel__block"></div>
 
-
       <p>We have a lit site.Join it.</p>
 
 <a href="http://s1339.photobucket.com/user/eazykrisp/media/splash_zpsrvoqxfy5.png.html" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/splash_zpsrvoqxfy5.png" border="0" alt="splash photo splash_zpsrvoqxfy5.png"/></a>
 
-    
+  
     </div>
   </article>
 </section>
@@ -349,17 +321,12 @@
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
           <input id="tvne" name="tvne" type="text" class="input">
-
+          
+    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
         </div>
-           <form>
-        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
-</form>  
-                  
-
 </form>
-
-    </div>
-  </article>
+</div>
+</article>
 </section>
 
 
@@ -394,66 +361,9 @@
     </div>
   </article>
 </section>
-
 <!-- end for the industry professional -->
 
 
-
-<section class="panel b-pink" id="5" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
-      <div class="panel__block"></div>
-              <form action="tv.php" method="post">
-
-        <div class="group">
-            
-            
-            
-            
-          <label for="user" class="label">Name</label>
-          <input id="name" name="name" type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Year</label>
-          <input id="tvyear" name="tvyear" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Created By</label>
-          <input id="tvcreatedby" name="created" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Number of Episodes</label>
-          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Director</label>
-          <input id="tvdirector" name="tvdirector" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Writer</label>
-          <input id="tvwriter" name="tvwriter" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Syndication Status</label>
-          <input id="tvss" name="tvss" type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Network Exclusivity</label>
-          <input id="tvne" name="tvne" type="text" class="input">
-          
-          
-                                            <input type="submit" class="button" value=" add">
-
-        </div>
-     
-                  
-
-</form>
-
-    </div>
-  </article>
-</section>
 
 
 <section class="panel b-black" id="6" style="display:none">
@@ -559,7 +469,6 @@
  <img class="logo" src="http://i1339.photobucket.com/albums/o707/eazykrisp/industrypro_button_zpsjqznt9ac.png" alt="are you pro?..." /> 
 </a>
 
-
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
@@ -580,13 +489,10 @@ function grabTV(i) {
     var tvss = document.getElementById("tvss").value;
     var tvne = document.getElementById("tvne").value;
     document.getElementById(i).style.display="none";
-
 }
 
 </script>
 
-
-<!-- industry user-->
 
 
 <!-- code for grabbing the form for industry professional -->
@@ -603,10 +509,10 @@ function grabIndustry(i) {
     var indusEmployer = document.getElementById("indusEmployer").value; 
 
     document.getElementById(i).style.display="none";
-
 }
 
 </script>
+
 
 
 <script type = "text/javascript">
