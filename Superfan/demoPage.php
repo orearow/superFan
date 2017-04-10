@@ -295,7 +295,13 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-camera-retro"></i>&nbsp;ABOUT</h1>
       <div class="panel__block"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestias ducimus, eos asperiores, ab officia sint nostrum quia, corporis officiis id praesentium expedita numquam ad non error optio est in.</p>
+
+
+      <p>We have a lit site.Join it.</p>
+
+<a href="http://s1339.photobucket.com/user/eazykrisp/media/splash_zpsrvoqxfy5.png.html" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/splash_zpsrvoqxfy5.png" border="0" alt="splash photo splash_zpsrvoqxfy5.png"/></a>
+
+    
     </div>
   </article>
 </section>
@@ -342,12 +348,11 @@
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
           <input id="tvne" name="tvne" type="text" class="input">
-          
-          
-                                            <input type="submit" class="button" value=" add">
 
         </div>
-     
+           <form>
+        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+</form>  
                   
 
 </form>
@@ -355,6 +360,41 @@
     </div>
   </article>
 </section>
+
+
+<!-- this is for the industry professional -->
+<!-- refer to css for the panel b coloring and ensure proper ID tagging -->
+<section class="panel b-black" id="666" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Are you an Industry Professional?</h1>
+      <div class="panel__block"></div>
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="indusName" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Email Contact</label>
+          <input id="indusEmail" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Agent contact (blank if N/A)</label>
+          <input id="indusAgent" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Current/Most Recent Studio employer</label>
+          <input id="indusEmployer" type="text" class="input">
+        </div>      
+
+        <form>
+        <a href="#3" id="submit" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/black_check_zpsv9ga4fli.png" border="0" alt="lackchecker photo black_check_zpsv9ga4fli.png" onclick="grabIndustry('666')"/></a>
+</form>
+
+    </div>
+  </article>
+</section>
+<!-- end for the industry professional -->
+
 
 <section class="panel b-black" id="6" style="display:none">
   <article class="panel__wrapper">
@@ -454,6 +494,12 @@
  <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/add_zpsketqweds.png" alt="" /> 
 </a>
 
+
+<a href="#666" class="resize" id="tinaislit" target="_blank" onclick="newPage('666');">
+ <img class="logo" src="http://i1339.photobucket.com/albums/o707/eazykrisp/industrypro_button_zpsjqznt9ac.png" alt="are you pro?..." /> 
+</a>
+
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
@@ -477,6 +523,29 @@ function grabTV(i) {
 }
 
 </script>
+
+
+<!-- industry user-->
+
+
+<!-- code for grabbing the form for industry professional -->
+<script>
+
+function newPage(i){
+  document.getElementById(i).style.display="flex";
+}
+
+function grabIndustry(i) {
+    var indusName = document.getElementById("indusName").value;
+    var indusEmail = document.getElementById("indusEmail").value;  
+    var indusAgent = document.getElementById("indusAgent").value;
+    var indusEmployer = document.getElementById("indusEmployer").value; 
+
+    document.getElementById(i).style.display="none";
+}
+
+</script>
+
 
 <script type = "text/javascript">
           function displayNextImage() {

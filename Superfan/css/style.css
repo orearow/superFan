@@ -189,7 +189,7 @@ ul {
   -webkit-transform: none;
           transform: none;
   opacity: 1;
-}
+} 
 .panel__headline {
   color:#1C333B;
   font-weight: 700;
@@ -197,6 +197,15 @@ ul {
   font-size: 48px;
   margin: 0 0 25px 0;
 }
+
+.panel__headline__media {
+  color:#f3f3f3;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 48px;
+  margin: 0 0 25px 0;
+}
+
 .panel p {
   margin: 0 0 25px 0;
   color: #1a1a1a;
@@ -211,6 +220,13 @@ ul {
   background: rgba(0, 0, 0, 0.2);
   margin: 0 0 25px 0;
 }
+
+.panel__block__media {
+  height: 3px;
+  background: #f3f3f3;
+  margin: 0 0 23px 0;
+}
+
 @media (max-width: 640px) {
   .panel__headline {
     font-size: 36px;
@@ -255,8 +271,23 @@ ul {
   background: #faac58;
 }
 
+.b-pink {
+  background: #f7819f;
+}
+
+.b-black {
+  background: #454545;
+}
+
+
+
+
+
+
+/* for the industry plus/add  button */
+
 .logo {
-  position: fixed;
+  position: absolute;
   bottom: 3vh;
   right: 3vw;
   z-index: 2;
@@ -272,6 +303,39 @@ ul {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
 }
+/* for the industry plus/add  button */
+
+
+
+
+
+
+/* for the industry pro button */
+
+#tinaislit {
+  bottom: 100px;
+  right: 3vw;
+  position: absolute;
+  z-index: 1;
+}
+
+#tinaislit img {
+  width: 110px;
+  height: 34px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+#tinaislit img:hover {
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
+}
+
+
+
+/* for the industry pro button */
+
 
 body{
   margin:0;
@@ -907,14 +971,3 @@ a{color:inherit;text-decoration:none}
 input[type=text]:focus {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
