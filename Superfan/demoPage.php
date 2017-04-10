@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>SUPERFAN</title>
+
 <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -14,6 +15,13 @@
 <a href="http://s1244.photobucket.com/user/teehuynhsama/media/superda_zpsyq9iqyrb.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/superda_zpsyq9iqyrb.png" border="0" alt=" photo superda_zpsyq9iqyrb.png"/></a>
 </header>
 -->
+    
+    <!--
+    <a href="#5" class="logo" target="_blank" onclick="member/memberPage.html;">
+ <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/ettrics-logo.svg" alt="" /> 
+</a>
+-->
+
 <body>
   <nav class="nav">
   <div class="burger">
@@ -39,6 +47,10 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;SUPERFAN</h1>
+      
+<button onclick="location.href = 'member/memberPage.html';" id="myButton" class="float-left submit-button" >Profile</button>
+
+
       <div class="panel__block"></div>
   <div class="login-wrap">
   <div class="login-html">
@@ -105,6 +117,19 @@
   <article class="panel__wrapper">
       <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;MOVIES</h1>
+      
+            <form action="getShowByName.php" method="post">
+            <b>Input Name of MOVIE:</b><br />
+            <input type ="text" name = "series_name" size=40><br />
+                    </form>
+ 
+      <form action="tabber/tabActivity.html" method="get">
+
+  <button type="submit">Other Search Options</button><br>
+</form>
+           <br>
+      <br>
+      
       <div class="panel__block"></div>
       <div id="f1_container">
       <div id="f1_card" class="shadow">
@@ -182,6 +207,32 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
+      <form action="getShowByName.php" method="post">
+            <b>Input Name of TV SERIES:</b><br />
+            <input type ="text" name = "series_name" size=40><br />
+            
+            <div class="field" id="searchform">
+
+</div>
+
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+            
+            
+            
+            
+            
+            
+            
+                    </form>
+      
+      
+      <form action="tabber/tabActivity.html" method="get">
+
+  <button type="submit">Other Search Options</button><br>
+</form>
+      
+      
+
       <div class="panel__block"></div>
         <a href="#6" onclick="newPage('6');">
         <div id="cf">
@@ -245,10 +296,108 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-camera-retro"></i>&nbsp;ABOUT</h1>
       <div class="panel__block"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestias ducimus, eos asperiores, ab officia sint nostrum quia, corporis officiis id praesentium expedita numquam ad non error optio est in.</p>
+
+
+      <p>We have a lit site.Join it.</p>
+
+<a href="http://s1339.photobucket.com/user/eazykrisp/media/splash_zpsrvoqxfy5.png.html" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/splash_zpsrvoqxfy5.png" border="0" alt="splash photo splash_zpsrvoqxfy5.png"/></a>
+
+    
     </div>
   </article>
 </section>
+
+<section class="panel b-pink" id="5" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
+      <div class="panel__block"></div>
+              <form action="tv.php" method="post">
+
+        <div class="group">
+            
+            
+            
+            
+          <label for="user" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" name="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" name="created" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" name="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" name="tvne" type="text" class="input">
+
+        </div>
+           <form>
+        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+</form>  
+                  
+
+</form>
+
+    </div>
+  </article>
+</section>
+
+
+<!-- this is for the industry professional -->
+<!-- refer to css for the panel b coloring and ensure proper ID tagging -->
+<section class="panel b-black" id="666" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Are you an Industry Professional?</h1>
+      <div class="panel__block"></div>
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="indusName" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Email Contact</label>
+          <input id="indusEmail" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Agent contact (blank if N/A)</label>
+          <input id="indusAgent" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Current/Most Recent Studio employer</label>
+          <input id="indusEmployer" type="text" class="input">
+        </div>      
+
+        <form>
+        <a href="#3" id="submit" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/black_check_zpsv9ga4fli.png" border="0" alt="lackchecker photo black_check_zpsv9ga4fli.png" onclick="grabIndustry('666')"/></a>
+</form>
+
+    </div>
+  </article>
+</section>
+
+<!-- end for the industry professional -->
+
+
 
 <section class="panel b-pink" id="5" style="display:none">
   <article class="panel__wrapper">
@@ -305,6 +454,7 @@
     </div>
   </article>
 </section>
+
 
 <section class="panel b-black" id="6" style="display:none">
   <article class="panel__wrapper">
@@ -404,6 +554,12 @@
  <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/add_zpsketqweds.png" alt="" /> 
 </a>
 
+
+<a href="#666" class="resize" id="tinaislit" target="_blank" onclick="newPage('666');">
+ <img class="logo" src="http://i1339.photobucket.com/albums/o707/eazykrisp/industrypro_button_zpsjqznt9ac.png" alt="are you pro?..." /> 
+</a>
+
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
@@ -424,9 +580,34 @@ function grabTV(i) {
     var tvss = document.getElementById("tvss").value;
     var tvne = document.getElementById("tvne").value;
     document.getElementById(i).style.display="none";
+
 }
 
 </script>
+
+
+<!-- industry user-->
+
+
+<!-- code for grabbing the form for industry professional -->
+<script>
+
+function newPage(i){
+  document.getElementById(i).style.display="flex";
+}
+
+function grabIndustry(i) {
+    var indusName = document.getElementById("indusName").value;
+    var indusEmail = document.getElementById("indusEmail").value;  
+    var indusAgent = document.getElementById("indusAgent").value;
+    var indusEmployer = document.getElementById("indusEmployer").value; 
+
+    document.getElementById(i).style.display="none";
+
+}
+
+</script>
+
 
 <script type = "text/javascript">
           function displayNextImage() {
