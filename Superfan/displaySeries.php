@@ -21,21 +21,23 @@
             
  
  
-$sql="INSERT INTO login (username, password, email)
-VALUES
-('$_POST[username]','$_POST[password]','$_POST[email]')";
+$sql="SELECT  name, created, episodenum, synstat, network, director, writer, year from series)
+$result = $conn->query($sql);
 
-            echo "<br><br>Inserting  into db: ";
-            if($conn->query($sql)==TRUE){       //try executing the query 
-                echo "Query executed<br>";
-            }
-            else{
-                echo "Query did not execute<br>";
-            }
- 
-            $conn-> close();            //close the connection to database
-
+           if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+    echo "name: " . $row["name"]. " - Name: " . 
+      $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
 ?>
+
+
+
 </body>
 </html><?php
 

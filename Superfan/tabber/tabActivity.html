@@ -1,110 +1,141 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html >
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Horizontal Tab Menu Slider v0.2</title>
+  <meta name="viewport" content="width=device-width">
 
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic,700' rel='stylesheet' type='text/css'>
+<script src="https://use.typekit.net/vzf4zus.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Project Cards Template | CodyHouse</title>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
-	<header>
-		<a href="#0" class="cd-logo"><img src="img/cd-logo.svg"></a>
-		
-		<button class="cd-nav-trigger">Menu<span aria-hidden="true" class="cd-icon"></span></button>
-	</header>
+  <nav class="nav nav--active">
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color1" data-letter="a"></div>
+        <p class="nav__label">Search by year</p>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color2" data-letter="e"></div>
+        <p class="nav__label">Search by Director</p>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color3" data-letter="c"></div>
+        <p class="nav__label">Search by Writer</p>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color4" data-letter="a"></div>
+        <p class="nav__label">Search by Network</p>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color5" data-letter="r"></div>
+        <p class="nav__label">Search by Character</p>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="" class="nav__link">
+        <div class="nav__thumb color6" data-letter="g"></div>
+        <p class="nav__label">Search by Actor</p>
+      </a>
+    </li>
+  </ul>
+   <a href="http://ettrics.com/" class="logo" target="_blank">
+   <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/ettrics-logo.svg" alt="" /> 
+  </a>
+</nav>
 
-	<nav class="cd-primary-nav">
-		<ul>
-			<li class="cd-label">Navigation</li>
-			<li><a href="#0">The team</a></li>
-			<li><a href="#0">Our services</a></li>
-			<li><a href="#0">Our projects</a></li>
-			<li><a href="#0">Contact us</a></li>
-		</ul>
-	</nav> <!-- .cd-primary-nav -->
-	
-	<div class="cd-projects-container">
-		<ul>
-			<li class="single-project">
-				<div class="cd-title">
-					<h2>Project 1</h2>
-				</div> <!-- .cd-title -->
+<div class="page">
+  <section class="section section--active color1" data-letter="a">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by Year</h1>
+      
+      
+            <form action="getShowByYear.php" method="post">
+            <input type ="text" name = "series_year" size=40><br />
+                    </form>
+      
+      
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+  <section class="section color2" data-letter="p">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by Director</h1>
+      
+      
+            <form action="getShowByDirector.php" method="post">
+            <input type ="text" name = "series_director" size=40><br />
+                                </form>
 
-				<div class="cd-project-info">
-					<button class="cd-scroll">Scroll down</button>
-					
-					<div class="content-wrapper">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
-						</p>
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+  <section class="section color3" data-letter="q">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by writer</h1>
+      
+                  <form action="getShowByWriter.php" method="post">
+            <input type ="text" name = "series_writer" size=40><br />
+                    </form>
 
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illo error assumenda consequuntur qui inventore est, reiciendis nisi consequatur repudiandae eos tempora quia dolorum, quibusdam, autem aspernatur hic atque sunt facere! Aliquid dolorem, explicabo quisquam animi sunt ducimus officia odit expedita corrupti soluta culpa quas commodi assumenda, non perspiciatis? Quasi odio eveniet, totam in. Odio autem neque nobis tempora quis nisi illum enim velit atque placeat, quae obcaecati maiores doloremque pariatur, dolores in reiciendis ipsa! Aut, praesentium, quaerat! Amet eligendi, totam corporis doloremque commodi, neque, aperiam et doloribus nihil numquam, temporibus. Earum repellendus perferendis saepe officia voluptates temporibus dolore nostrum repudiandae nulla totam doloremque provident reiciendis facere, illo placeat at id. Non, atque. Quidem amet inventore, quos officia accusamus ipsam eaque facere eligendi. Harum id, atque ab. Ex dolor perferendis, sunt iste vitae repellat unde voluptatem obcaecati. Aperiam ullam quam sed incidunt optio eligendi enim dolorum, ipsam voluptate neque est ipsum assumenda autem laboriosam, deleniti. Accusantium dolores fugiat, nam quidem ab cumque rem veniam magnam voluptatibus, sapiente dolorem quaerat consectetur harum? Odit suscipit ipsa commodi aperiam a, iste architecto officia dignissimos repellendus ex! Iure ducimus laborum omnis aliquid nemo quos possimus, unde vero! Praesentium labore explicabo quae, iusto earum architecto quia, maxime recusandae quis necessitatibus quam temporibus, distinctio nesciunt culpa, tempore quas veniam ipsam doloremque voluptatum inventore ad quos minus voluptas eius. Sint, tenetur asperiores quod? Fuga dolores laborum possimus, animi perferendis neque suscipit nisi ipsa, sapiente ea itaque odit? Ullam esse maxime laudantium veritatis quasi omnis assumenda pariatur magnam quas ipsam, minima numquam nam iste amet facere velit sit dolor temporibus, harum incidunt id labore! Magnam voluptatibus praesentium deleniti architecto nobis consequatur accusamus, adipisci soluta quaerat earum natus, dolorem amet ullam ipsa repellat molestiae. Voluptatem ea, soluta, possimus vero, impedit quae laboriosam quod totam, ullam veritatis officia natus veniam!
-						</p>
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+  <section class="section color4" data-letter="e">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by Network</h1>
+      
+                  <form action="getShowByNetwork.php" method="post">
+            <input type ="text" name = "series_network" size=40><br />
+                                </form>
 
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem tempora laborum, nam, est delectus mollitia sapiente dicta nihil, ipsam qui hic tempore corporis. Illum quaerat omnis iusto ut molestias at perferendis corrupti voluptate neque harum pariatur mollitia molestiae a sequi, magni, vel quisquam dolores ipsa, quibusdam iure debitis sapiente eum. Explicabo enim, natus ea nesciunt ab ut ipsum. Dignissimos maiores non eum, voluptas iusto tempore enim vitae quo natus amet voluptates sit consequuntur itaque molestias adipisci id fuga! Officiis nam iusto incidunt quis, facere voluptate deleniti error et fugit ex, nostrum mollitia, minima ducimus rerum eveniet quam suscipit odit!
-						</p>
-					</div>
-				</div> <!-- .cd-project-info -->
-			</li>
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+  <section class="section color5" data-letter="s">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by character</h1>
+      
+      
+                  <form action="getShowByCharacter.php" method="post">
+            <input type ="text" name = "series_character" size=40><br />
+                                </form>
 
-			<li class="single-project">
-				<div class="cd-title">
-					<h2>Project 2</h2>
-				</div> <!-- .cd-title -->
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+  <section class="section color6">
+    <article class="section__wrapper">
+      <h1 class="section__title">Search by Actor</h1>
+      
+      
+                  <form action="getShowByActor.php" method="post">
+            <input type ="text" name = "series_actor" size=40><br />
+                                </form>
 
-				<div class="cd-project-info">
-					<button class="cd-scroll">Scroll down</button>
+      <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+    </article>
+  </section>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-					<div class="content-wrapper">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
-						</p>
+    <script src="js/index.js"></script>
 
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illo error assumenda consequuntur qui inventore est, reiciendis nisi consequatur repudiandae eos tempora quia dolorum, quibusdam, autem aspernatur hic atque sunt facere! Aliquid dolorem, explicabo quisquam animi sunt ducimus officia odit expedita corrupti soluta culpa quas commodi assumenda, non perspiciatis? Quasi odio eveniet, totam in. Odio autem neque nobis tempora quis nisi illum enim velit atque placeat, quae obcaecati maiores doloremque pariatur, dolores in reiciendis ipsa! Aut, praesentium, quaerat! Amet eligendi, totam corporis doloremque commodi, neque, aperiam et doloribus nihil numquam, temporibus. Earum repellendus perferendis saepe officia voluptates temporibus dolore nostrum repudiandae nulla totam doloremque provident reiciendis facere, illo placeat at id. Non, atque. Quidem amet inventore, quos officia accusamus ipsam eaque facere eligendi. Harum id, atque ab. Ex dolor perferendis, sunt iste vitae repellat unde voluptatem obcaecati. Aperiam ullam quam sed incidunt optio eligendi enim dolorum, ipsam voluptate neque est ipsum assumenda autem laboriosam, deleniti. Accusantium dolores fugiat, nam quidem ab cumque rem veniam magnam voluptatibus, sapiente dolorem quaerat consectetur harum? Odit suscipit ipsa commodi aperiam a, iste architecto officia dignissimos repellendus ex! Iure ducimus laborum omnis aliquid nemo quos possimus, unde vero! Praesentium labore explicabo quae, iusto earum architecto quia, maxime recusandae quis necessitatibus quam temporibus, distinctio nesciunt culpa, tempore quas veniam ipsam doloremque voluptatum inventore ad quos minus voluptas eius. Sint, tenetur asperiores quod? Fuga dolores laborum possimus, animi perferendis neque suscipit nisi ipsa, sapiente ea itaque odit? Ullam esse maxime laudantium veritatis quasi omnis assumenda pariatur magnam quas ipsam, minima numquam nam iste amet facere velit sit dolor temporibus, harum incidunt id labore! Magnam voluptatibus praesentium deleniti architecto nobis consequatur accusamus, adipisci soluta quaerat earum natus, dolorem amet ullam ipsa repellat molestiae. Voluptatem ea, soluta, possimus vero, impedit quae laboriosam quod totam, ullam veritatis officia natus veniam!
-						</p>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem tempora laborum, nam, est delectus mollitia sapiente dicta nihil, ipsam qui hic tempore corporis. Illum quaerat omnis iusto ut molestias at perferendis corrupti voluptate neque harum pariatur mollitia molestiae a sequi, magni, vel quisquam dolores ipsa, quibusdam iure debitis sapiente eum. Explicabo enim, natus ea nesciunt ab ut ipsum. Dignissimos maiores non eum, voluptas iusto tempore enim vitae quo natus amet voluptates sit consequuntur itaque molestias adipisci id fuga! Officiis nam iusto incidunt quis, facere voluptate deleniti error et fugit ex, nostrum mollitia, minima ducimus rerum eveniet quam suscipit odit!
-						</p>
-					</div>
-				</div> <!-- .cd-project-info -->
-			</li>
-
-			<li class="single-project">
-				<div class="cd-title">
-					<h2>Project 3</h2>
-				</div> <!-- .cd-title -->
-
-				<div class="cd-project-info">
-					<button class="cd-scroll">Scroll down</button>
-					
-					<div class="content-wrapper">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias suscipit mollitia vitae ea non ex, dignissimos aperiam minus magni totam sint culpa vel voluptate ipsa sunt repellendus. Ab, magni!
-						</p>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illo error assumenda consequuntur qui inventore est, reiciendis nisi consequatur repudiandae eos tempora quia dolorum, quibusdam, autem aspernatur hic atque sunt facere! Aliquid dolorem, explicabo quisquam animi sunt ducimus officia odit expedita corrupti soluta culpa quas commodi assumenda, non perspiciatis? Quasi odio eveniet, totam in. Odio autem neque nobis tempora quis nisi illum enim velit atque placeat, quae obcaecati maiores doloremque pariatur, dolores in reiciendis ipsa! Aut, praesentium, quaerat! Amet eligendi, totam corporis doloremque commodi, neque, aperiam et doloribus nihil numquam, temporibus. Earum repellendus perferendis saepe officia voluptates temporibus dolore nostrum repudiandae nulla totam doloremque provident reiciendis facere, illo placeat at id. Non, atque. Quidem amet inventore, quos officia accusamus ipsam eaque facere eligendi. Harum id, atque ab. Ex dolor perferendis, sunt iste vitae repellat unde voluptatem obcaecati. Aperiam ullam quam sed incidunt optio eligendi enim dolorum, ipsam voluptate neque est ipsum assumenda autem laboriosam, deleniti. Accusantium dolores fugiat, nam quidem ab cumque rem veniam magnam voluptatibus, sapiente dolorem quaerat consectetur harum? Odit suscipit ipsa commodi aperiam a, iste architecto officia dignissimos repellendus ex! Iure ducimus laborum omnis aliquid nemo quos possimus, unde vero! Praesentium labore explicabo quae, iusto earum architecto quia, maxime recusandae quis necessitatibus quam temporibus, distinctio nesciunt culpa, tempore quas veniam ipsam doloremque voluptatum inventore ad quos minus voluptas eius. Sint, tenetur asperiores quod? Fuga dolores laborum possimus, animi perferendis neque suscipit nisi ipsa, sapiente ea itaque odit? Ullam esse maxime laudantium veritatis quasi omnis assumenda pariatur magnam quas ipsam, minima numquam nam iste amet facere velit sit dolor temporibus, harum incidunt id labore! Magnam voluptatibus praesentium deleniti architecto nobis consequatur accusamus, adipisci soluta quaerat earum natus, dolorem amet ullam ipsa repellat molestiae. Voluptatem ea, soluta, possimus vero, impedit quae laboriosam quod totam, ullam veritatis officia natus veniam!
-						</p>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure exercitationem tempora laborum, nam, est delectus mollitia sapiente dicta nihil, ipsam qui hic tempore corporis. Illum quaerat omnis iusto ut molestias at perferendis corrupti voluptate neque harum pariatur mollitia molestiae a sequi, magni, vel quisquam dolores ipsa, quibusdam iure debitis sapiente eum. Explicabo enim, natus ea nesciunt ab ut ipsum. Dignissimos maiores non eum, voluptas iusto tempore enim vitae quo natus amet voluptates sit consequuntur itaque molestias adipisci id fuga! Officiis nam iusto incidunt quis, facere voluptate deleniti error et fugit ex, nostrum mollitia, minima ducimus rerum eveniet quam suscipit odit!
-						</p>
-					</div>
-				</div> <!-- .cd-project-info -->
-			</li>
-		</ul>
-	</div> <!-- .cd-projects-container -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
