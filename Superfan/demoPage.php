@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>SUPERFAN</title>
+
 <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -105,6 +106,19 @@
   <article class="panel__wrapper">
       <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;MOVIES</h1>
+      
+            <form action="getShowByName.php" method="post">
+            <b>Input Name of MOVIE:</b><br />
+            <input type ="text" name = "series_name" size=40><br />
+                    </form>
+ 
+      <form action="tabber/tabActivity.html" method="get">
+
+  <button type="submit">Other Search Options</button><br>
+</form>
+           <br>
+      <br>
+      
       <div class="panel__block"></div>
       <div id="f1_container">
       <div id="f1_card" class="shadow">
@@ -182,6 +196,19 @@
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
+      <form action="getShowByName.php" method="post">
+            <b>Input Name of TV SERIES:</b><br />
+            <input type ="text" name = "series_name" size=40><br />
+                    </form>
+      
+      
+      <form action="tabber/tabActivity.html" method="get">
+
+  <button type="submit">Other Search Options</button><br>
+</form>
+      
+      
+
       <div class="panel__block"></div>
         <a href="#6" onclick="newPage('6');">
         <div id="cf">
@@ -255,41 +282,53 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A TV SHOW</h1>
       <div class="panel__block"></div>
+              <form action="tv.php" method="post">
+
         <div class="group">
+            
+            
+            
+            
           <label for="user" class="label">Name</label>
-          <input id="tvname" type="text" class="input">
+          <input id="name" name="name" type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Year</label>
-          <input id="tvyear" type="text" class="input">
+          <input id="tvyear" name="tvyear" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Created By</label>
-          <input id="tvcreatedby" type="text" class="input">
+          <input id="tvcreatedby" name="created" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Number of Episodes</label>
-          <input id="tvepisodes" type="text" class="input">
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Director</label>
-          <input id="tvdirector" type="text" class="input">
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Writer</label>
-          <input id="tvwriter" type="text" class="input">
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
         </div>
         <div class="group">
           <label for="user" class="label">Syndication Status</label>
-          <input id="tvss" type="text" class="input">
+          <input id="tvss" name="tvss" type="text" class="input">
         </div>      
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
-          <input id="tvne" type="text" class="input">
+          <input id="tvne" name="tvne" type="text" class="input">
+          
+          
+                                            <input type="submit" class="button" value=" add">
+
         </div>
-        <form>
-        <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+     
+                  
+
 </form>
+
     </div>
   </article>
 </section>
