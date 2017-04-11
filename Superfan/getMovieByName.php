@@ -18,17 +18,17 @@
             
             
  
-$series_name = $_POST['series_name'];
+$movie_name = $_POST['movie_name'];
  
 
 
 // This is in the PHP file and sends a Javascript alert to the client
 
-echo "<script type='text/javascript'>alert('$series_name');</script>";
+echo "<script type='text/javascript'>alert('$movie_name');</script>";
 
 
-$sql = "SELECT Id, created, episodenum, synstat, network, director,writer, name
-FROM series WHERE name = '$series_name'";
+$sql = "SELECT release, synopsis, title
+FROM movie WHERE title = '$movie_name'";
 $response = $conn->query($sql);
 //$response = $conn->query($sql);
 
@@ -37,23 +37,12 @@ if($response-> num_rows >0) {
      
 
     while($row = $response->fetch_assoc()) {
-        echo "<tr> <td> " .$row["name"]."</td><td>";
+        echo "<tr> <td> " .$row["release"]."</td><td>";
         echo "<br>";
-        echo "<tr><td>".$row["Id"]."</td><td>";
+        echo "<tr><td>".$row["synopsis"]."</td><td>";
         echo "<br>";
-        echo "<tr><td>".$row["created"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["episodenum"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["synstat"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["network"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["director"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["writer"]."</td><td>";
-                echo "<br>";
-        echo "<tr><td>".$row["name"]."</td><td>";
+        echo "<tr><td>".$row["title"]."</td><td>";
+      
 
 
     }  

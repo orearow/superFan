@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>SUPERFAN</title>
 
+ 
+      <form action="member/memberPage.html" method="get">
+  <button type="submit">Other Search Options</button><br>
+</form>
+
+
+
+
+  
+  
 <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -107,9 +117,11 @@
       <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;MOVIES</h1>
       
-            <form action="getShowByName.php" method="post">
+            <form action="getMovieByName.php" method="post">
             <b>Input Name of MOVIE:</b><br />
-            <input type ="text" name = "series_name" size=40><br />
+              <button type="submit">Search</button><br>
+
+            <input type ="text" name = "movie_name" size=40><br />
             </form>
       <form action="tabber/tabActivity.html" method="get">
   <button type="submit">Other Search Options</button><br>
@@ -325,6 +337,83 @@
     <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
         </div>
 </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+         <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A Movie</h1>
+      <div class="panel__block"></div>
+              <form action="tv.php" method="post">
+
+        <div class="group">
+            
+            
+            
+            
+          <label for="user" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" name="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" name="created" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" name="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" name="tvne" type="text" class="input">
+          
+    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+        </div>
+</form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 </div>
 </article>
 </section>
