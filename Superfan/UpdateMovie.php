@@ -18,10 +18,12 @@
                 echo "Connected<br>";
             }
             
-
- 
-$sql = "UPDATE movie SET `name` = "$_POST[title]", `release` = "$_POST[movie_release]", synopsis = "$_POST[synopsis]"
-WHERE `name = '$_POST['movie_to_change']'";
+$sql = "UPDATE movie SET 
+            `name` = '$title', 
+            `release` = '$movie_release', 
+            `synopsis` = '$synopsis'
+            WHERE 
+            `name` = '$movie_to_change'";
 
     $response = $conn->query($sql);
     if($response->num_rows > 0){
