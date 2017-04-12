@@ -1,9 +1,6 @@
 <!--
-References:
-"Vertical Layout With Navigation". Ettrics. N.p., 2017. Web. 1 Apr. 2017.
-"Ethereal By HTML5 UP". HTML5 UP. N.p., 2017. Web. 10 Apr. 2017.
-"Expanding Column Layout". Ettrics. N.p., 2017. Web. 6 Apr. 2017.
-"Horizontal Tab Menu". Ettrics. N.p., 2017. Web. 8 Apr. 2017.
+Credits for base template and navigation toolbar:
+http://ettrics.com/code/vertical-layout-navigation/
 -->
 
 <!DOCTYPE html>
@@ -20,7 +17,7 @@ References:
       <link rel="stylesheet" href="css/style.css">
 </head>
 
-      <form action="login.php" method="get">
+      <form action="member/memberPage.html" method="get">
   <button type="submit">Other Search Options</button><br>
 </form>
 
@@ -46,10 +43,13 @@ References:
       <a href="#3" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
     </li>
     <li onclick="loadPage();" class="nav__item">
-      <a href="#1" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
+      <a href="#1" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsaincepma/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
     </li>
   </ul>
 </nav>
+
+
+
 <section class="panel b-blue" id="4">
   <article class="panel__wrapper">
     <div class="panel__content">
@@ -61,7 +61,7 @@ References:
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
-                  <form action="login.php" method="post">
+                  <form action="member/memberPage.php" method="post">
 
         <div class="group">
           <label for="user" class="label">Username</label>
@@ -147,17 +147,28 @@ References:
     </div>
   </article>
 </section>
+
+
+
 <section class="panel b-yellow" id="2">
   <article class="panel__wrapper">
       <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;MOVIES</h1>
       
-            <form action="getMovieByName.php" method="post">
-            <b>Input Name of MOVIE:</b><br />
-              <button type="submit">Search</button><br>
+      <!-- the get movie form to change -->
+      <form action="searchResults.php" method="post">  <!-- was getMovieByName.php-->
+        <b>Input Name of MOVIE:</b><br />
+        <button type="submit">Search</button><br>
 
-            <input type ="text" name = "movie_name" size=40><br />
-            </form>
+          <div class="group">
+            <label for="searchfieldmovie" class="label">searchfield</label>
+            <input id="searchfieldmovie" type="text" name= "searchfieldmovie" class="input">
+          </div>
+
+
+          <input type ="text" name = "movie_name" size=40><br />
+       </form>
+      
       <form action="movietabber/movieTab.html" method="get">
   <button type="submit">Other Search Options</button><br>
 </form>
@@ -167,21 +178,21 @@ References:
       <div id="f1_container">
       <div id="f1_card" class="shadow">
         <div class="front face">
-          <img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/action_zpsjhmnddva.png" border="0" alt=" photo action_zpsjhmnddva.png" width="200" height="200"/>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/action_zpsjhmnddva.png" border="0" alt=" photo action_zpsjhmnddva.png" width="200" height="200"/></a>
         </div>
     </div>
     </div>
       <div id="f1_container2">
-      <div id="f1_card2" class="shadow">
+      <div id="animation" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/ANIMATION_zpseprvl39k.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/ANIMATION_zpseprvl39k.png" border="0" alt=" photo ANIMATION_zpseprvl39k.png" width="200" height="200"/></a>
+          <a href="animation.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/ANIMATION_zpseprvl39k.png" border="0" alt=" photo ANIMATION_zpseprvl39k.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>
       <div id="f1_container3">
-      <div id="f1_card3" class="shadow">
+      <div id="romancemovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/romance_zpsgzmwrd8r.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/romance_zpsgzmwrd8r.png" border="0" alt=" photo romance_zpsgzmwrd8r.png" width="200" height="200"/></a>
+          <a href="romancemovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/romance_zpsgzmwrd8r.png" border="0" alt=" photo romance_zpsgzmwrd8r.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>
@@ -189,7 +200,7 @@ References:
       <div id="f1_container4">
       <div id="f1_card4" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/sci_zpsgkyrwxzp.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/sci_zpsgkyrwxzp.png" border="0" alt=" photo sci_zpsgkyrwxzp.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/sci_zpsgkyrwxzp.png" border="0" alt=" photo sci_zpsgkyrwxzp.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>    
@@ -197,15 +208,15 @@ References:
       <div id="f1_container5">
       <div id="f1_card5" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/FANTASY_zps4fjpmie4.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/FANTASY_zps4fjpmie4.png" border="0" alt=" photo FANTASY_zps4fjpmie4.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/FANTASY_zps4fjpmie4.png" border="0" alt=" photo FANTASY_zps4fjpmie4.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
 
       <div id="f1_container6">
-      <div id="f1_card6" class="shadow">
+      <div id="comedymovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/COMEDY2_zpsrtntcl8c.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsrtntcl8c.png" border="0" alt=" photo COMEDY2_zpsrtntcl8c.png" width="200" height="200"/></a>
+          <a href="comedymovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsrtntcl8c.png" border="0" alt=" photo COMEDY2_zpsrtntcl8c.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
@@ -213,15 +224,15 @@ References:
       <div id="f1_container7">
       <div id="f1_card7" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/MYSERTY_zpsyc8qsq9s.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/MYSERTY_zpsyc8qsq9s.png" border="0" alt=" photo MYSERTY_zpsyc8qsq9s.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/MYSERTY_zpsyc8qsq9s.png" border="0" alt=" photo MYSERTY_zpsyc8qsq9s.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>    
 
       <div id="f1_container8">
-      <div id="f1_card8" class="shadow">
+      <div id="dramamovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/DRAMA_zpsg6cn4lva.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/DRAMA_zpsg6cn4lva.png" border="0" alt=" photo DRAMA_zpsg6cn4lva.png" width="200" height="200"/></a>
+          <a href="dramamovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/DRAMA_zpsg6cn4lva.png" border="0" alt=" photo DRAMA_zpsg6cn4lva.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
@@ -229,21 +240,29 @@ References:
       <div id="f1_container9">
       <div id="f1_card9" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/horoor_zpswk5avzcg.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horoor_zpswk5avzcg.png" border="0" alt=" photo horoor_zpswk5avzcg.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horoor_zpswk5avzcg.png" border="0" alt=" photo horoor_zpswk5avzcg.png" width="200" height="200"/></a>
         </div>
       </div>
     </div> 
     </div>
   </article>
 </section>
+
 <section class="panel b-red" id="3">
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
-      <form action="getShowByName.php" method="post">
+      <form action="searchResultsTV.php" method="post">
+
             <b>Input Name of TV SERIES:</b><br />
-            <input type ="text" name = "series_name" size=40><br />
-                    </form>
+            <button type="submit">Search</button><br>
+
+            <div class="group">
+            <label for="searchfieldtv" class="label">searchfield</label>
+            <input id="searchfieldtv" type="text" name= "searchfieldtv" class="input">
+            </div>
+
+      </form>
       
       
       <form action="tabber/tabActivity.html" method="get">
@@ -311,6 +330,9 @@ References:
     </div>
   </article>
 </section>
+
+
+
 <section class="panel b-green" id="1">
   <article class="panel__wrapper">
     <div class="panel__content">
@@ -442,6 +464,7 @@ References:
             <label for="user" class="label">Name To Change</label>
             <input id ="name_to_change" name="name_to_change" type="text" class="input">
         </div>          
+        
         <div class="group">
           <label for="user" class="label">Name</label>
           <input id="name" name="name" type="text" class="input">
