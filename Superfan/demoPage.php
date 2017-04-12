@@ -59,7 +59,7 @@
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
-                  <form action="login.php" method="post">
+                  <form action="member/memberPage.php" method="post">
 
         <div class="group">
           <label for="user" class="label">Username</label>
@@ -86,18 +86,50 @@
       <div class="sign-up-htm">
                     <form action="newUser.php" method="post">
 
+                        
+                        
+                        
         <div class="group">
           <label for="username" class="label">Username</label>
-          <input id="username" name="username" type="text" class="input">
+          <input id="username" name="login_username" type="text" class="input">
         </div>
+                        
+                        
+                                               
+        <div class="group">
+          <label for="favorite_quote" class="label">Favorite Quote</label>
+          <input id="favorite_quote" name="fav_quote" type="text" class="input">
+        </div>
+                
+                        
+                        
         <div class="group">
           <label for="password" class="label">Password</label>
-          <input id="password" name="password" type="password" class="input" data-type="password">
+          <input id="password" name="login_password" type="password" class="input" data-type="password">
         </div>
         <div class="group">
+          <label for="about_me" class="label">About me</label>
+          <input id="about_me" name="about_me" type="text" class="input">
+        </div>
+                        
+                      <div class="group">
           <label for="password" class="label">Email Address</label>
           <input id="pass" name="email" type="text" class="input">
-        </div>
+        </div> 
+                        
+           <div class="group">
+          <label for="image" class="label"> Image url</label>
+          <input id="image" name="image" type="text" class="input">
+        </div>   
+                                                
+           <div class="group">
+          <label for="image" class="label"> Name of user </label>
+          <input id="login_name" name="name" type="text" class="input">
+        </div>   
+                        
+                        
+                       <label for="tab-1">Already Member?</a>
+           
         <div class="group">
           <input type="submit" class="button" value="Sign Up">
         </div>
@@ -105,7 +137,6 @@
 
         <div class="hr"></div>
         <div class="foot-lnk">
-          <label for="tab-1">Already Member?</a>
         </div>
       </div>
     </div>
