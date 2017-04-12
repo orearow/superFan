@@ -58,7 +58,7 @@ http://ettrics.com/code/vertical-layout-navigation/
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
-                  <form action="login.php" method="post">
+                  <form action="member/memberPage.php" method="post">
 
         <div class="group">
           <label for="user" class="label">Username</label>

@@ -4,8 +4,8 @@
 
             // put your code here
             $servername = "localhost";          //should be same for you
-            $username = "user";                 //same here
-            $password = "password";             //your localhost root password
+            $username = "root";                 //same here
+            $password = "future";             //your localhost root password
             $db = "superfan";                     //your database name
 
 
