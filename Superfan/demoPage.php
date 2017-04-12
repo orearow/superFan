@@ -5,9 +5,6 @@
   <title>SUPERFAN</title>
 
  
-      <form action="member/memberPage.html" method="get">
-  <button type="submit">Other Search Options</button><br>
-</form>
 
 
 
@@ -20,6 +17,11 @@
   
       <link rel="stylesheet" href="css/style.css">
 </head>
+
+      <form action="member/memberPage.html" method="get">
+  <button type="submit">Other Search Options</button><br>
+</form>
+
 <!--
 <header>
 <a href="http://s1244.photobucket.com/user/teehuynhsama/media/superda_zpsyq9iqyrb.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/superda_zpsyq9iqyrb.png" border="0" alt=" photo superda_zpsyq9iqyrb.png"/></a>
@@ -123,7 +125,7 @@
 
             <input type ="text" name = "movie_name" size=40><br />
             </form>
-      <form action="tabber/tabActivity.html" method="get">
+      <form action="movietabber/movieTab.html" method="get">
   <button type="submit">Other Search Options</button><br>
 </form>
       <br>
@@ -333,8 +335,8 @@
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
           <input id="tvne" name="tvne" type="text" class="input">
-          
-    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
+            <button type="submit"> Add </button><br>
+
         </div>
 </form>
       
@@ -352,53 +354,53 @@
       
       
       
+      <br>
+      <br>
+      <br>
       
       
       
       
       
-         <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A Movie</h1>
-      <div class="panel__block"></div>
-              <form action="tv.php" method="post">
+      
+      
+      
+      
+      
+      
+      
+      
+            <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A Movie</h1>
+
+      
+      
+      
+
+      
+         
+              <form action="newMovie.php" method="post">
 
         <div class="group">
             
             
             
             
-          <label for="user" class="label">Name</label>
-          <input id="name" name="name" type="text" class="input">
+          <label for="user" class="label">Release</label>
+          <input id="name" name="release" type="text" class="input">
         </div>      
         <div class="group">
-          <label for="user" class="label">Year</label>
-          <input id="tvyear" name="tvyear" type="text" class="input">
+          <label for="user" class="label">Synopsis</label>
+          <input id="tvyear" name="synopsis" type="text" class="input">
         </div>
-        <div class="group">
-          <label for="user" class="label">Created By</label>
-          <input id="tvcreatedby" name="created" type="text" class="input">
+                          <div class="group">
+          <label for="user" class="label">title</label>
+          <input id="tvyear" name="title" type="text" class="input">
         </div>
-        <div class="group">
-          <label for="user" class="label">Number of Episodes</label>
-          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Director</label>
-          <input id="tvdirector" name="tvdirector" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Writer</label>
-          <input id="tvwriter" name="tvwriter" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Syndication Status</label>
-          <input id="tvss" name="tvss" type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Network Exclusivity</label>
-          <input id="tvne" name="tvne" type="text" class="input">
+               <button type="submit"> Add </button><br>
+
+   
           
-    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
-        </div>
+       
 </form>
       
       

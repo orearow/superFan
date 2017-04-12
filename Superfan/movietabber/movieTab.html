@@ -21,25 +21,25 @@
     <li class="nav__item">
       <a href="" class="nav__link">
         <div class="nav__thumb color1" data-letter="a"></div>
-        <p class="nav__label">Search by year</p>
+        <p class="nav__label">Search by movie title</p>
       </a>
     </li>
     <li class="nav__item">
       <a href="" class="nav__link">
         <div class="nav__thumb color2" data-letter="e"></div>
-        <p class="nav__label">Search by Director</p>
+        <p class="nav__label">Search by release year</p>
       </a>
     </li>
     <li class="nav__item">
       <a href="" class="nav__link">
         <div class="nav__thumb color3" data-letter="c"></div>
-        <p class="nav__label">Search by Writer</p>
+        <p class="nav__label">Search by Genre</p>
       </a>
     </li>
     <li class="nav__item">
       <a href="" class="nav__link">
         <div class="nav__thumb color4" data-letter="a"></div>
-        <p class="nav__label">Search by Network</p>
+        <p class="nav__label">Search by Director</p>
       </a>
     </li>
     <li class="nav__item">
@@ -63,11 +63,11 @@
 <div class="page">
   <section class="section section--active color1" data-letter="a">
     <article class="section__wrapper">
-      <h1 class="section__title">Search by Year</h1>
+      <h1 class="section__title">Search by Movie Title</h1>
       
       
-            <form action="getShowByYear.php" method="post">
-            <input type ="text" name = "series_year" size=40><br />
+            <form action="getMovieByTitle.php" method="post">
+            <input type ="text" name = "movie_title" size=40><br />
                     </form>
       
       
@@ -76,11 +76,11 @@
   </section>
   <section class="section color2" data-letter="p">
     <article class="section__wrapper">
-      <h1 class="section__title">Search by Director</h1>
+      <h1 class="section__title">Search by Release Year</h1>
       
       
-            <form action="getShowByDirector.php" method="post">
-            <input type ="text" name = "series_director" size=40><br />
+            <form action="getMovieByRelease.php" method="post">
+            <input type ="text" name = "movie_release" size=40><br />
                                 </form>
 
       <p>Use your 'left' and 'right' arrow keys to navigate.</p>
@@ -88,10 +88,10 @@
   </section>
   <section class="section color3" data-letter="q">
     <article class="section__wrapper">
-      <h1 class="section__title">Search by writer</h1>
+      <h1 class="section__title">Search by genre</h1>
       
-                  <form action="getShowByWriter.php" method="post">
-            <input type ="text" name = "series_writer" size=40><br />
+                  <form action="getMovieByGenre.php" method="post">
+            <input type ="text" name = "series_genre" size=40><br />
                     </form>
 
       <p>Use your 'left' and 'right' arrow keys to navigate.</p>
@@ -99,10 +99,10 @@
   </section>
   <section class="section color4" data-letter="e">
     <article class="section__wrapper">
-      <h1 class="section__title">Search by Network</h1>
+      <h1 class="section__title">Search by Director</h1>
       
-                  <form action="getShowByNetwork.php" method="post">
-            <input type ="text" name = "series_network" size=40><br />
+                  <form action="getMovieByNetwork.php" method="post">
+            <input type ="text" name = "series_Director" size=40><br />
                                 </form>
 
       <p>Use your 'left' and 'right' arrow keys to navigate.</p>
@@ -113,8 +113,8 @@
       <h1 class="section__title">Search by character</h1>
       
       
-                  <form action="getShowByCharacter.php" method="post">
-            <input type ="text" name = "series_character" size=40><br />
+                  <form action="getMovieByCharacter.php" method="post">
+            <input type ="text" name = "movie_character" size=40><br />
                                 </form>
 
       <p>Use your 'left' and 'right' arrow keys to navigate.</p>
