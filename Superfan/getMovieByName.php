@@ -49,7 +49,10 @@ if($response-> num_rows >0) {
      
 }
 else {
-    echo "Couldn't issue database quey";
+    echo "Couldn't issue database query";
+                   echo "Query did not execute<br>";
+                $notMovieFound = 'noSearchResults.html';
+            header('Location: '.$notMovieFound);
 }
  
             $conn-> close();            //close the connection to database
