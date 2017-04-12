@@ -21,9 +21,9 @@
             
  
  
-$sql="INSERT INTO login (username, password, email)
+$sql="INSERT INTO login (username, password, age, gender, fav_quote, about_me, image, name, email )
 VALUES
-('$_POST[username]','$_POST[password]','$_POST[email]')";
+('$_POST[username]','$_POST[login_password]','$_POST[age]  ','$_POST[gender] ','$_POST[fav_quote] ','$_POST[email]','$_POST[about_me] ','$_POST[image] ','$_POST[name]')";
 
             echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 

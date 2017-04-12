@@ -20,6 +20,14 @@
             
             
  
+            
+            
+            
+            
+            
+            
+            
+            
  
 $sql="INSERT INTO series (name, created, episodenum, synstat, network, director, writer, year)
 VALUES
