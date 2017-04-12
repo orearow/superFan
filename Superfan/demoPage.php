@@ -47,6 +47,9 @@ http://ettrics.com/code/vertical-layout-navigation/
     </li>
   </ul>
 </nav>
+
+
+
 <section class="panel b-blue" id="4">
   <article class="panel__wrapper">
     <div class="panel__content">
@@ -144,17 +147,28 @@ http://ettrics.com/code/vertical-layout-navigation/
     </div>
   </article>
 </section>
+
+
+
 <section class="panel b-yellow" id="2">
   <article class="panel__wrapper">
       <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;MOVIES</h1>
       
-            <form action="getMovieByName.php" method="post">
-            <b>Input Name of MOVIE:</b><br />
-              <button type="submit">Search</button><br>
+      <!-- the get movie form to change -->
+      <form action="searchResults.php" method="post">  <!-- was getMovieByName.php-->
+        <b>Input Name of MOVIE:</b><br />
+        <button type="submit">Search</button><br>
 
-            <input type ="text" name = "movie_name" size=40><br />
-            </form>
+          <div class="group">
+            <label for="searchfieldmovie" class="label">searchfield</label>
+            <input id="searchfieldmovie" type="text" name= "searchfieldmovie" class="input">
+          </div>
+
+
+          <input type ="text" name = "movie_name" size=40><br />
+       </form>
+      
       <form action="movietabber/movieTab.html" method="get">
   <button type="submit">Other Search Options</button><br>
 </form>
@@ -233,14 +247,22 @@ http://ettrics.com/code/vertical-layout-navigation/
     </div>
   </article>
 </section>
+
 <section class="panel b-red" id="3">
   <article class="panel__wrapper">
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;TELEVISION</h1>
-      <form action="getShowByName.php" method="post">
+      <form action="searchResultsTV.php" method="post">
+
             <b>Input Name of TV SERIES:</b><br />
-            <input type ="text" name = "series_name" size=40><br />
-                    </form>
+            <button type="submit">Search</button><br>
+
+            <div class="group">
+            <label for="searchfieldtv" class="label">searchfield</label>
+            <input id="searchfieldtv" type="text" name= "searchfieldtv" class="input">
+            </div>
+
+      </form>
       
       
       <form action="tabber/tabActivity.html" method="get">
@@ -308,6 +330,9 @@ http://ettrics.com/code/vertical-layout-navigation/
     </div>
   </article>
 </section>
+
+
+
 <section class="panel b-green" id="1">
   <article class="panel__wrapper">
     <div class="panel__content">
