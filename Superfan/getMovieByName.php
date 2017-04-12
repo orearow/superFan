@@ -23,6 +23,7 @@ $movie_name = $_POST['movie_name'];
 
 
 // This is in the PHP file and sends a Javascript alert to the client
+echo "<script type='text/javascript'>alert('hi I am ore');</script>";
 
 echo "<script type='text/javascript'>alert('$movie_name');</script>";
 
@@ -52,7 +53,7 @@ else {
     echo "Couldn't issue database query";
                    echo "Query did not execute<br>";
                 $notMovieFound = 'noSearchResults.html';
-            header('Location: '.$notMovieFound);
+         //   header('Location: '.$notMovieFound);
 }
  
             $conn-> close();            //close the connection to database
