@@ -18,16 +18,29 @@
                 echo "Connected<br>";
             }
             
-            
- 
- 
-$sql="INSERT INTO series (name, created, episodenum, synstat, network, director, writer, year)
-VALUES
-('$_POST[name]','$_POST[created]','$_POST[tvepisodes] ','$_POST[tvss]','$_POST[tvne]','$_POST[tvdirector]','$_POST[tvwriter]','$_POST[tvyear]')";
+ $name_to_change = $_POST['name_to_change'];           
+ $name=$_POST['name'];
+ $created=$_POST['created'];
+ $tvepisodes=$_POST['tvepisodes'];
+ $tvss=$_POST['tvss'];
+ $tvne=$_POST['tvne'];
+ $tvdirector=$_POST['tvdirector'];
+ $tvwriter=$_POST['tvwriter'];
+ $tvyear=$_POST['tvyear'];
+
+  echo "<script type='text/javascript'>alert('$name_to_change');</script>";
+  echo "<script type='text/javascript'>alert('$name');</script>";
+ echo "<script type='text/javascript'>alert('$created');</script>";
+  echo "<script type='text/javascript'>alert('$tvepisodes');</script>";
+  
+$sql="UPDATE series"
+     ." SET name = '$name', created = '$created', episodenum = $tvepisodes, synstat = '$tvss', network = '$tvne', director = '$tvdirector',
+         writer = '$tvwriter', year = $tvyear"
+     ." WHERE name = '$name_to_change'";
 
             echo "<br><br>Inserting  into db: ";
-            if($conn->query($sql)==TRUE){       //try executing the query 
-                echo "Query executed<br>";
+            if($conn->query($sql)){       //try executing the query 
+                echo "TV Show with the name: $name_to_change<br>";
             }
             else{
                 echo "Query did not execute<br>";
