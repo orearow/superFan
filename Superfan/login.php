@@ -49,10 +49,18 @@ if($response-> num_rows >0) {
 
 
     }  
-     
+    
+        $memberPage = 'member/memberPage.php';
+
+     header('Location: '.$memberPage);
+
 }
 else {
     echo "Couldn't issue database quey";
+    $notUser = 'notUser.html';
+
+header('Location: '.$notUser);
+
 }
  
             $conn-> close();            //close the connection to database

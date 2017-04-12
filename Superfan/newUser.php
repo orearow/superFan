@@ -28,9 +28,14 @@ VALUES
             echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 
                 echo "Query executed<br>";
+                
+
+                                      $welcome = 'welcome.html';
+
+     header('Location: '.$welcome);  
             }
             else{
-                echo "Query did not execute<br>";
+                echo "We don't know what happened. looks like your info is invalid :( did not execute<br>";
             }
  
             $conn-> close();            //close the connection to database
