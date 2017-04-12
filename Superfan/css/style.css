@@ -1401,7 +1401,7 @@ input[type=text]:focus {
   opacity:0;
 }
 
-#inception {
+#inception   {
   position:relative;
   height:281px;
   width:450px;
@@ -1410,7 +1410,7 @@ input[type=text]:focus {
   left:200px;
 }
 
-#inception img {
+#inception   img {
   position:absolute;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -1419,6 +1419,6 @@ input[type=text]:focus {
   transition: opacity 1s ease-in-out;
 }
 
-#inception img.top:hover {
+#inception   img.top:hover {
   opacity:0;
 }
