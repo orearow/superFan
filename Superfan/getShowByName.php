@@ -61,8 +61,6 @@ if($response-> num_rows >0) {
 }
 else {
     echo "Couldn't issue database quey";
-                    $notTVFound = 'noSearchResults.html';
-            header('Location: '.$notTVFound);
 }
  
             $conn-> close();            //close the connection to database

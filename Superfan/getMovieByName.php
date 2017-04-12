@@ -4,8 +4,8 @@
 
             // put your code here
             $servername = "localhost";          //should be same for you
-            $username = "root";                 //same here
-            $password = "future";             //your localhost root password
+            $username = "user";                 //same here
+            $password = "password";             //your localhost root password
             $db = "superfan";                     //your database name
 
 
@@ -23,7 +23,6 @@ $movie_name = $_POST['movie_name'];
 
 
 // This is in the PHP file and sends a Javascript alert to the client
-echo "<script type='text/javascript'>alert('hi I am ore');</script>";
 
 echo "<script type='text/javascript'>alert('$movie_name');</script>";
 
@@ -50,10 +49,7 @@ if($response-> num_rows >0) {
      
 }
 else {
-    echo "Couldn't issue database query";
-                   echo "Query did not execute<br>";
-                $notMovieFound = 'noSearchResults.html';
-         //   header('Location: '.$notMovieFound);
+    echo "Couldn't issue database quey";
 }
  
             $conn-> close();            //close the connection to database
