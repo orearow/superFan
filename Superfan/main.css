@@ -198,7 +198,7 @@
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), url("images/bg.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -1619,7 +1619,7 @@
 			input[type="button"].special.color2,
 			button.special.color2,
 			.button.special.color2 {
-				color: #e37b7c !important;
+				color: #77d6d3 !important;
 			}
 
 			input[type="submit"].special.color3,
@@ -2175,7 +2175,7 @@
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.jpg");
+				background-image: url("images/overlay.jpg");
 				background-size: 128px 128px, auto;
 			}
 
@@ -2188,7 +2188,7 @@
 			.panel > *.color2 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				background-color: #77d6d3;
 			}
 
 			.panel > *.color3 {
@@ -2705,7 +2705,7 @@
 		.panel.color2 {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
-			background-color: #e37b7c;
+			background-color: #77d6d3;
 		}
 
 		.panel.color3 {
@@ -2763,7 +2763,7 @@
 			.panel > *.color2 {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				background-color: #77d6d3;
 			}
 
 			.panel > *.color3 {
@@ -3190,7 +3190,7 @@
 			.panel.color2 {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				background-color: #77d6d3;
 			}
 
 			.panel.color3 {
