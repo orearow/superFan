@@ -17,6 +17,9 @@
             }else{
                 echo "Connected<br>";
             }
+
+
+    
             
 $sql = "UPDATE movie SET 
             `name` = '$title', 
@@ -24,6 +27,9 @@ $sql = "UPDATE movie SET
             `synopsis` = '$synopsis'
             WHERE 
             `name` = '$movie_to_change'";
+
+
+            
 
     $response = $conn->query($sql);
     if($response->num_rows > 0){
