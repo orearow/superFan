@@ -27,7 +27,7 @@ $movie_name = $_POST['movie_name'];
 echo "<script type='text/javascript'>alert('$movie_name');</script>";
 
 
-$sql = "SELECT release, synopsis, title
+$sql = "SELECT movie_release, synopsis, title
 FROM movie WHERE title = '$movie_name'";
 $response = $conn->query($sql);
 //$response = $conn->query($sql);

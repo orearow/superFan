@@ -331,10 +331,31 @@ ul {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
 }
-
-
-
 /* for the industry pro button */
+
+
+/* for the edit button */
+#editEntity {
+  bottom: 3vh;
+  right: 130px;
+  position: absolute;
+  z-index: 1;
+}
+
+#editEntity img {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+#editEntity img:hover {
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
+}
+/* for the edit button */
+
 
 
 body{
@@ -933,72 +954,6 @@ a{color:inherit;text-decoration:none}
   opacity:0;
 }
 
-#cf7 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-  bottom:1686px;
-  left:440px;
-}
-
-#cf7 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf7 img.top:hover {
-  opacity:0;
-}
-
-
-#cf8 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-  bottom:1746px;
-  left:440px;
-}
-
-#cf8 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf8 img.top:hover {
-  opacity:0;
-}
-
-#cf9 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-  bottom:1804px;
-  left:440px;
-}
-
-#cf9 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf9 img.top:hover {
-  opacity:0;
-}
 
 
 .input[type=text] {

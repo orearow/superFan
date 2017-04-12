@@ -1,8 +1,6 @@
-<html>
-<body>
- 
- 
 <?php
+ 
+
 
             // put your code here
             $servername = "localhost";          //should be same for you
@@ -20,21 +18,43 @@
             
             
  
+$log_password = $_POST['password'];
+$log_username = $_POST['username'];
+
  
-$sql="INSERT INTO login (username, password)
-VALUES
-('$_POST[username]','$_POST[password]')";
+
+
+// This is in the PHP file and sends a Javascript alert to the client
+
+echo "<script type='text/javascript'>alert('$log_username');</script>";
+echo "<script type='text/javascript'>alert('$log_password');</script>";
+
+
+
+$sql = "SELECT username, password
+FROM login WHERE username = '$log_username' AND password = '$log_password'";
+$response = $conn->query($sql);
+//$response = $conn->query($sql);
+
  
-            echo "<br><br>Inserting  into db: ";
-            if($conn->query($sql)==TRUE){       //try executing the query 
-                echo "Query executed<br>";
-            }
-            else{
-                echo "Query did not execute<br>";
-            }
+if($response-> num_rows >0) {
+     
+
+    while($row = $response->fetch_assoc()) {
+        echo "<tr> <td> " .$row["username"]."</td><td>";
+        echo "<br>";
+        echo "<tr><td>".$row["password"]."</td><td>";
+        echo " welcome back user ";
+    
+
+
+    }  
+     
+}
+else {
+    echo "Couldn't issue database quey";
+}
  
             $conn-> close();            //close the connection to database
 
 ?>
-</body>
-</html>

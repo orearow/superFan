@@ -5,9 +5,6 @@
   <title>SUPERFAN</title>
 
  
-      <form action="member/memberPage.html" method="get">
-  <button type="submit">Other Search Options</button><br>
-</form>
 
 
 
@@ -20,6 +17,11 @@
   
       <link rel="stylesheet" href="css/style.css">
 </head>
+
+      <form action="member/memberPage.html" method="get">
+  <button type="submit">Other Search Options</button><br>
+</form>
+
 <!--
 <header>
 <a href="http://s1244.photobucket.com/user/teehuynhsama/media/superda_zpsyq9iqyrb.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/superda_zpsyq9iqyrb.png" border="0" alt=" photo superda_zpsyq9iqyrb.png"/></a>
@@ -57,7 +59,7 @@
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
       <div class="sign-in-htm">
-                  <form action="login.php" method="post">
+                  <form action="member/memberPage.php" method="post">
 
         <div class="group">
           <label for="user" class="label">Username</label>
@@ -84,18 +86,50 @@
       <div class="sign-up-htm">
                     <form action="newUser.php" method="post">
 
+                        
+                        
+                        
         <div class="group">
           <label for="username" class="label">Username</label>
-          <input id="username" name="username" type="text" class="input">
+          <input id="username" name="login_username" type="text" class="input">
         </div>
+                        
+                        
+                                               
+        <div class="group">
+          <label for="favorite_quote" class="label">Favorite Quote</label>
+          <input id="favorite_quote" name="fav_quote" type="text" class="input">
+        </div>
+                
+                        
+                        
         <div class="group">
           <label for="password" class="label">Password</label>
-          <input id="password" name="password" type="password" class="input" data-type="password">
+          <input id="password" name="login_password" type="password" class="input" data-type="password">
         </div>
         <div class="group">
+          <label for="about_me" class="label">About me</label>
+          <input id="about_me" name="about_me" type="text" class="input">
+        </div>
+                        
+                      <div class="group">
           <label for="password" class="label">Email Address</label>
           <input id="pass" name="email" type="text" class="input">
-        </div>
+        </div> 
+                        
+           <div class="group">
+          <label for="image" class="label"> Image url</label>
+          <input id="image" name="image" type="text" class="input">
+        </div>   
+                                                
+           <div class="group">
+          <label for="image" class="label"> Name of user </label>
+          <input id="login_name" name="name" type="text" class="input">
+        </div>   
+                        
+                        
+                       <label for="tab-1">Already Member?</a>
+           
         <div class="group">
           <input type="submit" class="button" value="Sign Up">
         </div>
@@ -103,7 +137,6 @@
 
         <div class="hr"></div>
         <div class="foot-lnk">
-          <label for="tab-1">Already Member?</a>
         </div>
       </div>
     </div>
@@ -123,7 +156,7 @@
 
             <input type ="text" name = "movie_name" size=40><br />
             </form>
-      <form action="tabber/tabActivity.html" method="get">
+      <form action="movietabber/movieTab.html" method="get">
   <button type="submit">Other Search Options</button><br>
 </form>
       <br>
@@ -333,87 +366,31 @@
         <div class="group">
           <label for="user" class="label">Network Exclusivity</label>
           <input id="tvne" name="tvne" type="text" class="input">
-          
-    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
-        </div>
-</form>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-         <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A Movie</h1>
-      <div class="panel__block"></div>
-              <form action="tv.php" method="post">
+            <button type="submit"> Add </button><br>
 
-        <div class="group">
-            
-            
-            
-            
-          <label for="user" class="label">Name</label>
-          <input id="name" name="name" type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Year</label>
-          <input id="tvyear" name="tvyear" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Created By</label>
-          <input id="tvcreatedby" name="created" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Number of Episodes</label>
-          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Director</label>
-          <input id="tvdirector" name="tvdirector" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Writer</label>
-          <input id="tvwriter" name="tvwriter" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="user" class="label">Syndication Status</label>
-          <input id="tvss" name="tvss" type="text" class="input">
-        </div>      
-        <div class="group">
-          <label for="user" class="label">Network Exclusivity</label>
-          <input id="tvne" name="tvne" type="text" class="input">
-          
-    <a href="#3" id="submit" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/submit_zps8doyd7ol.png" border="0" alt=" photo submit_zps8doyd7ol.png" onclick="grabTV('5')"/></a>
         </div>
 </form>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      <br>
+      <br>
+      <br>
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;ADD A Movie</h1>
+     
+        <form action="newMovie.php" method="post">
+        <div class="group">
+          <label for="user" class="label">Release</label>
+          <input id="name" name="release" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Synopsis</label>
+          <input id="tvyear" name="synopsis" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">title</label>
+          <input id="tvyear" name="title" type="text" class="input">
+        </div>
+        <button type="submit"> Add </button><br>
+</form>
+
 </div>
 </article>
 </section>
@@ -449,6 +426,83 @@
 
     </div>
   </article>
+</section>
+<!-- end for the industry professional -->
+
+
+
+<!-- this is the form code to edit a movie or tv show  -->
+<!-- refer to css for the panel b coloring and ensure proper ID tagging -->
+<section class="panel b-red" id="76" style="display:none">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;EDIT A TV SHOW</h1>
+      <div class="panel__block"></div>
+              <form action="tv.php" method="post">  <!-- // TODO change to edit.php or whatever-->
+
+        <div class="group">
+          <label for="user" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Year</label>
+          <input id="tvyear" name="tvyear" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Created By</label>
+          <input id="tvcreatedby" name="created" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Number of Episodes</label>
+          <input id="tvepisodes" name="tvepisodes"type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Director</label>
+          <input id="tvdirector" name="tvdirector" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Writer</label>
+          <input id="tvwriter" name="tvwriter" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Syndication Status</label>
+          <input id="tvss" name="tvss" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Network Exclusivity</label>
+          <input id="tvne" name="tvne" type="text" class="input">
+            <button type="submit"> Change </button><br>
+        </div>
+</form>
+      <br>
+      <br>
+      <br>
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;EDIT A Movie</h1>
+     
+        <form action="UpdateMovie.php" method="post"> <!-- //to do change the newMovie.php to the whatever-->
+        
+        <div class="group">
+          <label for="user" class="label">Movie title to change</label>
+          <input id="name" name="movie_to_change" type="text" class="input">
+        </div>      
+
+        <div class="group">
+          <label for="user" class="label">Release</label>
+          <input id="name" name="movie_release" type="text" class="input">
+        </div>      
+        <div class="group">
+          <label for="user" class="label">Synopsis</label>
+          <input id="tvyear" name="synopsis" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">New title</label>
+          <input id="tvyear" name="title" type="text" class="input">
+        </div>
+        <button type="submit"> Change </button><br>
+</form>
+
+</div>
+</article>
 </section>
 <!-- end for the industry professional -->
 
@@ -548,14 +602,19 @@
 
 
 
-
+<!-- this is for the general add button-->
 <a href="#5" class="logo" target="_blank" onclick="newPage('5');">
  <img class="logo" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/add_zpsketqweds.png" alt="" /> 
 </a>
 
-
+<!-- this is for the industry add button-->
 <a href="#666" class="resize" id="tinaislit" target="_blank" onclick="newPage('666');">
  <img class="logo" src="http://i1339.photobucket.com/albums/o707/eazykrisp/industrypro_button_zpsjqznt9ac.png" alt="are you pro?..." /> 
+</a>
+
+<!-- this is for the edit entity button-->
+<a href="#76" class="resize" id="editEntity" target="_blank" onclick="newPage('76');">
+ <img class="logo" src="http://i1339.photobucket.com/albums/o707/eazykrisp/edit_button_zpsacrkwuss.png" alt="Change an entity?..." /> 
 </a>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -563,6 +622,9 @@
     <script src="js/index.js"></script>
 
 <script>
+
+
+
 
 function newPage(i){
   document.getElementById(i).style.display="flex";

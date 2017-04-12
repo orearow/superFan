@@ -18,46 +18,49 @@
             
             
  
+$series_writer = $_POST['series_writer'];
+ 
 
-$series_name = $_POST['series_name'];
- 
-$sql = "SELECT Id, created, episodenum, synstat, network, director,writer,name "
-        . "FROM series WHERE name = '$series_name'";
- 
-$response = @mysqli_query($db, $sql);
- 
-if($response) {
-    echo '<table align="left" cellspacing="5" cellpadding="8">
-     
-     
-    <tr><td align="left"><b>Show ID</b>
-    <td align="left"><b> Created by</b></td>
-    <td align="left"><b>Number of Episodes</b></td>
-    <td align="left"><b>Syndication Status</b></td>
-    <td align="left"><b>network</b></td>
-        <td align="left"><b>director</b></td>
-    <td align="left"><b>writer</b></td>
 
-    <td align="left"><b>Name of show</b></td></tr>';  
+// This is in the PHP file and sends a Javascript alert to the client
+
+echo "<script type='text/javascript'>alert('$series_writer');</script>";
+
+
+$sql = "SELECT Id, created, episodenum, synstat, network, director,writer, name
+FROM series WHERE writer = '$series_writer'";
+$response = $conn->query($sql);
+//$response = $conn->query($sql);
+
+ 
+if($response-> num_rows >0) {
      
-    while($row = mysqli_fetch_array($response)) {
-        echo '<tr><td align="left">' .
-        $row['Id'] . '</td><td align="left">' .
-        $row['created'] . '</td><td align="left">' .
-        $row['episodenum'] . '</td><td align="left">' .
-        $row['synstat'] . '</td><td align ="left">' .
-        $row['network'] . '</td><td align ="left">' .
-        $row['director'] . '</td><td align= "left">';
-                $row['writer'] . '</td><td align="left">' .
-        $row['name'] . '</td><td align= "left">';
-         
-        echo '</tr>';
+
+    while($row = $response->fetch_assoc()) {
+        echo "<tr> <td> " .$row["name"]."</td><td>";
+        echo "<br>";
+        echo "<tr><td>".$row["Id"]."</td><td>";
+        echo "<br>";
+        echo "<tr><td>".$row["created"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["episodenum"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["synstat"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["network"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["director"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["writer"]."</td><td>";
+                echo "<br>";
+        echo "<tr><td>".$row["name"]."</td><td>";
+
+
     }  
-    echo '</table>';
      
 }
 else {
-    echo "Couldn't issue database query";
+    echo "Couldn't issue database quey";
 }
  
             $conn-> close();            //close the connection to database
