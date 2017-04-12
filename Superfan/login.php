@@ -26,8 +26,7 @@ $log_username = $_POST['username'];
 
 // This is in the PHP file and sends a Javascript alert to the client
 
-echo "<script type='text/javascript'>alert('$log_username');</script>";
-echo "<script type='text/javascript'>alert('$log_password');</script>";
+
 
 
 

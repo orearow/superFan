@@ -433,8 +433,13 @@ http://ettrics.com/code/vertical-layout-navigation/
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;EDIT A TV SHOW</h1>
       <div class="panel__block"></div>
-              <form action="tv.php" method="post">  <!-- // TODO change to edit.php or whatever-->
-
+      <form action="UpdateTV.php" method="post">  <!-- // TODO change to edit.php or whatever-->
+        
+        <div class="group">
+            <label for="user" class="label">Name To Change</label>
+            <input id ="name_to_change" name="name_to_change" type="text" class="input">
+        </div>          
+        
         <div class="group">
           <label for="user" class="label">Name</label>
           <input id="name" name="name" type="text" class="input">

@@ -18,38 +18,39 @@
                 echo "Connected<br>";
             }
 
-
-    
+         
+      //    $movie_to_change="Shrek";
+$movie_release=$_POST['movie_release'];
+ $movie_to_change=$_POST['movie_to_change'];
+ $title=$_POST['title'];
+ $synopsis=$_POST['synopsis'];
+ 
+      echo "<script type='text/javascript'>alert('$title');</script>";
+            echo "<script type='text/javascript'>alert('$movie_to_change');</script>";
+            echo "<script type='text/javascript'>alert('$synopsis');</script>";
+            echo "<script type='text/javascript'>alert($movie_release);</script>";
             
-$sql = "UPDATE movie SET 
-            `name` = '$title', 
-            `release` = '$movie_release', 
-            `synopsis` = '$synopsis'
-            WHERE 
-            `name` = '$movie_to_change'";
+
+      
+ //$movie_release=$_POST['movie_release'];
+ //$movie_to_change=$_POST['movie_to_change'];
 
 
-            
 
-    $response = $conn->query($sql);
-    if($response->num_rows > 0){
+ //$synopsis=$_POST['synopsis'];
 
-        echo $sql["name"]."------".$sql["release"]."------".$sql["synopsis"];
-
-    }
-    else{
-        echo "Problem executing the quesry!! nigguh butch as cunt!! <3 8=======D`~~~~~";
-    }
-
-            echo "<br><br>Inserting  into db: ";
-            if($conn->query($sql)==TRUE){       //try executing the query 
-                echo "Query executed<br>";
+ 
+$sql = "UPDATE movie"
+        ." SET title = '$title', movie_release = $movie_release, synopsis = '$synopsis'"
+        ." WHERE title = '$movie_to_change'";
+          
+if($conn->query($sql)==TRUE){       //try executing the query 
+                echo "<p>Movie with the original name of: ".$movie_to_change. " has been updated!</p>" ;
             }
             else{
                 echo "Query did not execute<br>";
             }
  
-            $conn-> close();            //close the connection to database
 
 ?>
 </body>
