@@ -18,20 +18,12 @@
                 echo "Connected<br>";
             }
             
-
+            
  
-$sql = "UPDATE movie SET `name` = "$_POST[title]", `release` = "$_POST[movie_release]", synopsis = "$_POST[synopsis]"
-WHERE `name = '$_POST['movie_to_change']'";
-
-    $response = $conn->query($sql);
-    if($response->num_rows > 0){
-
-        echo $sql["name"]."------".$sql["release"]."------".$sql["synopsis"];
-
-    }
-    else{
-        echo "Problem executing the quesry!! nigguh butch as cunt!! <3 8=======D`~~~~~";
-    }
+ 
+$sql="INSERT INTO series (name, created, episodenum, synstat, network, director, writer, year)
+VALUES
+('$_POST[name]','$_POST[created]','$_POST[tvepisodes] ','$_POST[tvss]','$_POST[tvne]','$_POST[tvdirector]','$_POST[tvwriter]','$_POST[tvyear]')";
 
             echo "<br><br>Inserting  into db: ";
             if($conn->query($sql)==TRUE){       //try executing the query 

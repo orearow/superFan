@@ -331,10 +331,31 @@ ul {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
 }
-
-
-
 /* for the industry pro button */
+
+
+/* for the edit button */
+#editEntity {
+  bottom: 3vh;
+  right: 130px;
+  position: absolute;
+  z-index: 1;
+}
+
+#editEntity img {
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+#editEntity img:hover {
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
+}
+/* for the edit button */
+
 
 
 body{
