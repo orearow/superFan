@@ -1,3 +1,7 @@
+<!--
+Credits for base template and navigation toolbar:
+http://ettrics.com/code/horizontal-tab-menu/
+-->
 
 <!DOCTYPE html>
 <html >
