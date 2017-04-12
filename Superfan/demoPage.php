@@ -501,9 +501,6 @@ http://ettrics.com/code/vertical-layout-navigation/
 </section>
 <!-- end for the industry professional -->
 
-
-
-
 <section class="panel b-black" id="6" style="display:none">
   <article class="panel__wrapper">
     <div class="panel__content">
@@ -513,89 +510,6 @@ http://ettrics.com/code/vertical-layout-navigation/
     </div>
   </article>
 </section>
-
-<section class="panel b-black" id="7" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;SCI-FI</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="8" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;DRAMA</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="9" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;MYSTERY</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="10" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;FANTASY</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="11" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;ROMANCE</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="12" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;COMEDY</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="13" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;HORROR</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-<section class="panel b-black" id="14" style="display:none">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline__media"><i class="fa fa-music"></i>&nbsp;CHILDREN</h1>
-      <div class="panel__block__media"></div>
-      <p>Hey boi</p>
-    </div>
-  </article>
-</section>
-
-
-
 
 <!-- this is for the general add button-->
 <a href="#5" class="logo" target="_blank" onclick="newPage('5');">
