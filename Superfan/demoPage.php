@@ -1,3 +1,8 @@
+<!--
+Credits for base template and navigation toolbar:
+http://ettrics.com/code/vertical-layout-navigation/
+-->
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -5,12 +10,6 @@
   <title>SUPERFAN</title>
 
  
-
-
-
-
-  
-  
 <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -35,16 +34,16 @@
 
   <ul class="nav__list">
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
+      <a href="#4" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/user_zpskznzaxsa.png" border="0" alt=" photo user_zpskznzaxsa.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
+      <a href="#2" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/movie_zps9cnjiuab.png" border="0" alt=" photo movie_zps9cnjiuab.png" width="25" height="25"/></a>
     </li>
     <li class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
+      <a href="#3" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tv_zpsgcttyiix.png" border="0" alt=" photo tv_zpsgcttyiix.png" width="25" height="25"/></a>
     </li>
     <li onclick="loadPage();" class="nav__item">
-      <a href="" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
+      <a href="#1" target="_blank" class="nav__link c-blue"><i class="fa fa-camera-retro"></i><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zps8ldpebl6.png" border="0" alt=" photo about_zps8ldpebl6.png" width="25" height="25"/></a>
     </li>
   </ul>
 </nav>
@@ -252,55 +251,55 @@
       
 
       <div class="panel__block"></div>
-        <a href="#6" onclick="newPage('6');">
+        <a href="anime.html" onclick="newPage('6');">
         <div id="cf">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/anime1_zpswnugygzx.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/anime2_zpsogwd5wb6.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#7" onclick="newPage('7');">
+        <a href="scifi.html" onclick="newPage('7');">
         <div id="cf2">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI1_zpsdswzyoam.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/SCIFI2_zpsbunpvrhy.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#8" onclick="newPage('8');">
+        <a href="drama.html" onclick="newPage('8');">
         <div id="cf3">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama1_zpsxaxgq1tt.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/drama2_zpsnjpeyf6u.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#9" onclick="newPage('9');">
+        <a href="mystery.html" onclick="newPage('9');">
         <div id="cf4">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery2_zps0wgtmosb.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/mystery1_zpsulhfbr5e.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#10" onclick="newPage('10');">
+        <a href="fantasy.html" onclick="newPage('10');">
         <div id="cf5">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/fantasy2_zpsbhqyvo8i.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/fantasy1_zpsqjpxyaul.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#11" onclick="newPage('11');">
+        <a href="romance.html" onclick="newPage('11');">
         <div id="cf6">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom1_zpswslmrqop.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/tvrom2_zpssjonxnjq.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#12" onclick="newPage('12');">
+        <a href="comedy.html" onclick="newPage('12');">
         <div id="cf7">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/comedy1_zps9dkl83is.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsptnperfw.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#13" onclick="newPage('13');">
+        <a href="horror.html" onclick="newPage('13');">
         <div id="cf8">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror1_zpsnvjpkhix.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horror2_zpssubvcmn5.png" width="200" height="200" />
         </div>
         </a>
-        <a href="#14" onclick="newPage('14');">
+        <a href="child.html" onclick="newPage('14');">
         <div id="cf9">
          <img class="bottom" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child2_zpsganyrw8r.png" width="200" height="200" />
          <img class="top" src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/child1_zpsbe9y2to5.png" width="200" height="200" />
@@ -314,12 +313,8 @@
     <div class="panel__content">
       <h1 class="panel__headline"><i class="fa fa-camera-retro"></i>&nbsp;ABOUT</h1>
       <div class="panel__block"></div>
-
-      <p>We have a lit site.Join it.</p>
-
-<a href="http://s1339.photobucket.com/user/eazykrisp/media/splash_zpsrvoqxfy5.png.html" target="_blank"><img src="http://i1339.photobucket.com/albums/o707/eazykrisp/splash_zpsrvoqxfy5.png" border="0" alt="splash photo splash_zpsrvoqxfy5.png"/></a>
-
-  
+      <p>Welcome to SUPERFAN! Join our SUPERFAM.</p>
+      <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/about_zpscfj9csqa.png"/></a>
     </div>
   </article>
 </section>
