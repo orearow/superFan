@@ -164,21 +164,21 @@ http://ettrics.com/code/vertical-layout-navigation/
       <div id="f1_container">
       <div id="f1_card" class="shadow">
         <div class="front face">
-          <img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/action_zpsjhmnddva.png" border="0" alt=" photo action_zpsjhmnddva.png" width="200" height="200"/>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/action_zpsjhmnddva.png" border="0" alt=" photo action_zpsjhmnddva.png" width="200" height="200"/></a>
         </div>
     </div>
     </div>
       <div id="f1_container2">
-      <div id="f1_card2" class="shadow">
+      <div id="animation" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/ANIMATION_zpseprvl39k.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/ANIMATION_zpseprvl39k.png" border="0" alt=" photo ANIMATION_zpseprvl39k.png" width="200" height="200"/></a>
+          <a href="animation.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/ANIMATION_zpseprvl39k.png" border="0" alt=" photo ANIMATION_zpseprvl39k.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>
       <div id="f1_container3">
-      <div id="f1_card3" class="shadow">
+      <div id="romancemovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/romance_zpsgzmwrd8r.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/romance_zpsgzmwrd8r.png" border="0" alt=" photo romance_zpsgzmwrd8r.png" width="200" height="200"/></a>
+          <a href="romancemovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/romance_zpsgzmwrd8r.png" border="0" alt=" photo romance_zpsgzmwrd8r.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>
@@ -186,7 +186,7 @@ http://ettrics.com/code/vertical-layout-navigation/
       <div id="f1_container4">
       <div id="f1_card4" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/sci_zpsgkyrwxzp.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/sci_zpsgkyrwxzp.png" border="0" alt=" photo sci_zpsgkyrwxzp.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/sci_zpsgkyrwxzp.png" border="0" alt=" photo sci_zpsgkyrwxzp.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>    
@@ -194,15 +194,15 @@ http://ettrics.com/code/vertical-layout-navigation/
       <div id="f1_container5">
       <div id="f1_card5" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/FANTASY_zps4fjpmie4.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/FANTASY_zps4fjpmie4.png" border="0" alt=" photo FANTASY_zps4fjpmie4.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/FANTASY_zps4fjpmie4.png" border="0" alt=" photo FANTASY_zps4fjpmie4.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
 
       <div id="f1_container6">
-      <div id="f1_card6" class="shadow">
+      <div id="comedymovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/COMEDY2_zpsrtntcl8c.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsrtntcl8c.png" border="0" alt=" photo COMEDY2_zpsrtntcl8c.png" width="200" height="200"/></a>
+          <a href="comedymovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/COMEDY2_zpsrtntcl8c.png" border="0" alt=" photo COMEDY2_zpsrtntcl8c.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
@@ -210,15 +210,15 @@ http://ettrics.com/code/vertical-layout-navigation/
       <div id="f1_container7">
       <div id="f1_card7" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/MYSERTY_zpsyc8qsq9s.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/MYSERTY_zpsyc8qsq9s.png" border="0" alt=" photo MYSERTY_zpsyc8qsq9s.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/MYSERTY_zpsyc8qsq9s.png" border="0" alt=" photo MYSERTY_zpsyc8qsq9s.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>    
 
       <div id="f1_container8">
-      <div id="f1_card8" class="shadow">
+      <div id="dramamovie" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/DRAMA_zpsg6cn4lva.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/DRAMA_zpsg6cn4lva.png" border="0" alt=" photo DRAMA_zpsg6cn4lva.png" width="200" height="200"/></a>
+          <a href="dramamovie.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/DRAMA_zpsg6cn4lva.png" border="0" alt=" photo DRAMA_zpsg6cn4lva.png" width="200" height="200"/></a>
         </div>
       </div>
     </div>  
@@ -226,7 +226,7 @@ http://ettrics.com/code/vertical-layout-navigation/
       <div id="f1_container9">
       <div id="f1_card9" class="shadow">
         <div class="front face">
-          <a href="http://s1244.photobucket.com/user/teehuynhsama/media/horoor_zpswk5avzcg.png.html" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horoor_zpswk5avzcg.png" border="0" alt=" photo horoor_zpswk5avzcg.png" width="200" height="200"/></a>
+          <a href="" target="_blank"><img src="http://i1244.photobucket.com/albums/gg568/teehuynhsama/horoor_zpswk5avzcg.png" border="0" alt=" photo horoor_zpswk5avzcg.png" width="200" height="200"/></a>
         </div>
       </div>
     </div> 
